@@ -1,0 +1,523 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	font-family:"Courier New", Courier, monospace;
+	font-size:62.5%
+}
+
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	background-color:#FFFFFF;
+} 
+.utility {
+    z-index: 21;
+    position: relative;
+    height: 32px;
+    background-color: #46BA4C;
+    border-bottom: 4px solid #00539f;
+    left: 0;
+    right: 0;
+    top: 0;
+    font: 14px,arial;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+.utility_wrapper {
+    margin: 0px auto;
+    height: 32px;
+    width: 100%;
+    max-width: 960px;
+    border-right: 1px solid #3E5A75;
+}
+.utility_section {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+.utility_option {
+    display: inline;
+    float: left;
+    height: inherit;
+    border-left: 1px solid #3E5A75;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header ul {
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	list-style:none;
+	padding:10px;
+	position:inherit;
+	letter-spacing: 1px;
+	display:table;
+}
+header li {
+	float:left;
+	display:block;
+}
+
+#search ul {
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	list-style:none;
+	padding:10px;
+	position:inherit;
+	letter-spacing: 1px;
+	display:table;
+}
+#search li {
+	float:left;
+	display:block;
+}
+#search input {
+	Height:24px;
+	border-left:none;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+}
+#search select {
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+}
+nav ul {
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	list-style:none;
+	padding:10px;
+	position:inherit;
+	letter-spacing: 1px;
+	display:table;
+}
+nav li {
+	float:left;
+	display:block;
+	padding-left:30px;
+	padding-right:30px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+nav li a {
+	float:left;
+	display:block;
+	width:inherit;
+	text-decoration:none;
+	text-align: middle;
+}
+nav ul li a.active:link, nav ul li a.active:visited, nav ul li a:hover {
+    border-color:#7e7e6b;
+	color:#7e7e6b;
+	border-bottom: 2px solid;
+}
+#subnav ul {
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	list-style:none;
+	padding:10px;
+	position:inherit;
+	letter-spacing: 1px;
+	display:table;
+}
+#subnav li {
+	float:left;
+	display:block;
+	padding-left:30px;
+	padding-right:30px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#subnav li a {
+	float:left;
+	display:block;
+	width:inherit;
+	text-decoration:none;
+	text-align: middle;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+#button button {
+	font-size:16px;
+	clear:both;
+	transition: background 0.5s ease-in-out 0s;
+	padding: 5px;
+	margin:0 auto;
+}
+header img {
+	border: 0px none;
+}
+header {
+	border-bottom:5px solid;
+	border-color:#00539f;
+}
+nav {
+	border-bottom:25px solid;
+	border-color:#00539f;
+}
+#tabs a{
+	text-decoration:none;
+	color:#000;
+	font-size: 1.1rem;
+}
+#tabs li{
+	float:left;
+	list-style:none;
+	padding:4px;
+}
+#tabs li{
+	background-color:#404040;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	margin:5px;
+}
+#tabs {
+	clear:right;
+}
+#tabCtrl {
+	background-color:#181818;
+	padding:10px;
+}
+form {
+	padding:25px;
+	box-shadow:0px 0px 4px rgb(0, 0, 0) inset;
+	width: 700px;
+	max-width: 800px;
+	margin: 0 auto;
+	font-size: 1.1rem;
+	font-family: "Open Sans",Arial,sans-serif;
+}
+#AC ul li {
+	float: left;
+	list-style: none;
+	padding:50px;
+}
+#AC {
+	margin: 0 auto;
+	margin-top: -30px;
+}
+#AC li {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+#to input{
+	Background-color: #0C0C0C;
+	color:#7e7e6b;
+	border: none;
+	Height:30px;
+	Width:150px;
+	font-size: 1.1rem;
+	font-family: "Open Sans",Arial,sans-serif;
+	text-align: center;
+}
+#search select {
+	Height:30px;
+	border-color:#000;
+	font-family: "Open Sans",Arial,sans-serif;
+	text-align: center;
+}
+header {
+}
+.floatright {
+	float:right;
+	margin-right:150px;
+}
+.floatright {
+	float:right;
+	margin-right:150px;
+}
+#content {
+	font-size:1.0em;
+	padding:30px;
+}
+#slider {
+	padding-left:75px;
+	padding-right:75px;
+}
+#intro img {
+	margin: 13px;
+	border-radius: 5px;
+}
+#find img {
+	border: 0px none;
+}
+#find img:hover {
+	transform: rotateY(360deg);
+	transition: all 1s ease 0s;
+}
+#google-map {
+    border: 10px solid;
+	border-color: #34342C;
+	border-radius: 3px;
+	margin-left:55px;
+}
+#contact {
+	line-height: 1.1;
+	float:right;
+	clear:both;
+	margin-right:50px;
+	margin-top:-350px;
+	border-top:2px solid;
+	border-bottom:2px solid;
+	border-color:#D2CF8B;
+	width:300px;
+	padding:10px;
+}
+footer {
+	list-style:none;
+	color:#24241E;
+	display:block;
+}
+footer ul {
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	list-style:none;
+	padding:10px;
+	letter-spacing: 1px;
+	display:table;
+}
+#title {
+	font-size: 1.2rem;
+	font-family: "Open Sans",Arial,sans-serif;
+	Padding: 10px;
+	clear: right;
+	width:200px;
+	padding-left: 100px;
+}
+#title select {
+	Width:250px;
+	Height:30px;
+	color:#7e7e6b;
+	Background-color: #0C0C0C;
+	border-color:#000;
+	font-size: 1.1rem;
+	font-family: "Open Sans",Arial,sans-serif;
+	border:10px;
+}
+#fname {
+	font-size: 1.2rem;
+	font-family: "Open Sans",Arial,sans-serif;
+	Padding: 10px;
+	width:200px;
+	padding-left: 100px;
+}
+#fname input {
+	Width:250px;
+	Height:30px;
+	color:#7e7e6b;
+	Background-color: #0C0C0C;
+	border-color:#000;
+	font-size: 1.1rem;
+	font-family: "Open Sans",Arial,sans-serif;
+	border:10px;
+}
+#sname {
+	font-size: 1.2rem;
+	font-family: "Open Sans",Arial,sans-serif;
+	Padding: 10px;
+	width:200px;
+	float: right;
+	margin-top:-75px;
+	padding-right: 100px;
+}
+#sname input {
+	Width:250px;
+	Height:30px;
+	color:#7e7e6b;
+	Background-color: #0C0C0C;
+	border-color:#000;
+	border-bottom-color:#262626;
+	font-size: 1.1rem;
+	font-family: "Open Sans",Arial,sans-serif;
+	border:10px;
+}
+#email {
+	font-size: 1.2rem;
+	font-family: "Open Sans",Arial,sans-serif;
+	Padding: 10px;
+	width:200px;
+	padding-left: 100px;
+}
+#email input {
+	Width:250px;
+	Height:30px;
+	color:#7e7e6b;
+	Background-color: #0C0C0C;
+	border-color:#000;
+	border-bottom-color:#262626;
+	font-size: 1.1rem;
+	font-family: "Open Sans",Arial,sans-serif;
+	border:10px;
+}
+#phone {
+	font-size: 1.2rem;
+	font-family: "Open Sans",Arial,sans-serif;
+	Padding: 10px;
+	width:200px;
+	float: right;
+	margin-top:-75px;
+	padding-right: 100px;
+}
+#phone input {
+	Width:250px;
+	Height:30px;
+	color:#7e7e6b;
+	Background-color: #0C0C0C;
+	border-color:#000;
+	border-bottom-color:#262626;
+	font-size: 1.1rem;
+	font-family: "Open Sans",Arial,sans-serif;
+	border:10px;
+}
+#subject {
+	font-size: 1.2rem;
+	font-family: "Open Sans",Arial,sans-serif;
+	Padding: 10px;
+	width:650px;
+	padding-left: 100px;
+}
+#subject input {
+	Width:650px;
+	Height:30px;
+	color:#7e7e6b;
+	Background-color: #0C0C0C;
+	border-color:#000;
+	border-bottom-color:#262626;
+	font-size: 1.1rem;
+	font-family: "Open Sans",Arial,sans-serif;
+	border:10px;
+}
+#message {
+	font-size: 1.2rem;
+	font-family: "Open Sans",Arial,sans-serif;
+	Padding: 10px;
+	width:650px;
+	padding-left: 100px;
+}
+#message textarea{
+	Width:650px;
+	Height:300px;
+	color:#7e7e6b;
+	Background-color: #0C0C0C;
+	border-color:#000;
+	border-bottom-color:#262626;
+	font-size: 1.1rem;
+	font-family: "Open Sans",Arial,sans-serif;
+	border:10px;
+	resize: vertical;
+}
+footer li {
+	float:left;
+	display:block;
+	padding-left:30px;
+	padding-right:30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-bottom: 2px solid;
+	border-color:#000;
+}
+footer {
+}
+
+footer li a {
+	float:left;
+	display:block;
+	width:inherit;
+	color:#7e7e6b;
+	text-decoration:none;
+}
+footer ul li:hover {
+    border-color:#7e7e6b;
+}
+
+#bottom {
+	margin-left:550px;
+	padding:10px;
+}
+.Enquiry {
+	width: 800px;
+	max-width: 800px;
+	margin: 0 auto;
+	box-shadow:0px 0px 4px rgb(0, 0, 0) inset;
+	border-radius:5px;
+}
+.Enquiry label {
+	color: #000;
+}
+
+.Enquiry p {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	font-family: "Open Sans",Arial,sans-serif;
+	padding: 10px;
+	
+}
+#find {
+	float:right;
+	padding:10px;
+}
+#find img {
+	margin-left:2px;
+	margin-right:2px;
+}
+
+#wrapper {
+	color:#000;
+	margin: 0 auto;
+	width:960px;
+}
