@@ -2,8 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
+	<!--Name of page-->
 <title>FCEPH | Clothing</title>
+	<!--Link to style.css file-->
 <link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--This script allows a dropdown menu to appear when the first navigation option is selected-->
 <script> function Drop1() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -22,6 +25,7 @@ window.onclick = function(event) {
     }
   }
 }</script>
+<!--This script allows a dropdown menu to appear when the second navigation option is selected-->
 <script> function Drop2() {
     document.getElementById("myDropdown1").classList.toggle("show");
 }
@@ -40,6 +44,7 @@ window.onclick = function(event) {
     }
   }
 }</script>
+<!--This script allows a dropdown menu to appear when the third navigation option is selected-->
 <script> function Drop3() {
     document.getElementById("myDropdown2").classList.toggle("show");
 }
@@ -58,6 +63,7 @@ window.onclick = function(event) {
     }
   }
 }</script>
+<!--This script allows a dropdown menu to appear when the fourth navigation option is selected-->
 <script> function Drop4() {
     document.getElementById("myDropdown3").classList.toggle("show");
 }
@@ -79,13 +85,16 @@ window.onclick = function(event) {
 </head>
 
 <body>
+	<!--utility is the very top section of the website-->
 <div class="utility">
   <div class="utility_wrapper">
     <ul class="utility_section">
+	    <!--Logo-->
       <li class="utility_option"><a href="index.html"><img src="images/logo.png" width="227" height="50" alt="logo" /></a></li>
 	  <li class="utility_option"><div id="search">
 		<ul>
 			<li><div id="searchbar">
+				<!--Dropdown list of sections the user can search in-->
 				<select name="searchdropdown">
 					<option value="1">Search in Groceries</option>
 					<option value="2">Search in Clothing</option>
@@ -94,14 +103,16 @@ window.onclick = function(event) {
 					<option value="5">Search in Household</option>
 				</select>
 			</div></li>
+			<!--user input field-->
             <li><input id="to" type="text" name="to"></input></li>
 		</ul>
 		</div><!--End of search--></li>
+	<!--Additional links-->
       <li class="utility_option"><a data-ltc="header-contact" href="contact.html" class="utility_option_link"><img src="images/account.png" width="20" height="21" alt="Account" /><span>Your Account</span></a></li>
       <li class="utility_option"><a data-ltc="header-help" href="help.html" class="utility_option_link"><img src="images/basket.png" width="20" height="21" alt="Basket" /><span>Your Basket</span></a></li>
     </ul>
   </div>
-</div>
+</div><!--End of utility-->
 <div id="wrapper">
 	
 <header>
@@ -111,12 +122,12 @@ window.onclick = function(event) {
 <nav>
 	
 		<ul>
-	
+	<!--navigation bar-->
 			<li><a href="groceries.html">Groceries</a></li>
 			<li><a class="active" href="clothing.html">Clothing</a></li>
 			<li><a href="electronics.html">Electronics</a></li>
             <li><a href="pharmacy.html">Pharmacy</a></li>
-            <li><a href="household.html">Home & Furnature</a></li>
+            <li><a href="household.html">Home & Furniture</a></li>
             <li><a href="clubcard.html">Clubcard</a></li>
 			
 		</ul>
@@ -125,9 +136,10 @@ window.onclick = function(event) {
 <div id="subnav">
 	
 		<ul>
-	
+	<!--sub navigation bar under the navigation bar-->
 			<li><div class="dropdown">
 			<button onclick="Drop1()" class="dropbtn">Women's Clothing</button>
+				<!--sub navigation dropdown-->
 			<div id="myDropdown" class="dropdown-content">
 			<a href="#">Tops</a>
 			<a href="#">Trousers</a>
@@ -135,18 +147,21 @@ window.onclick = function(event) {
 			<a href="#">Skirt</a></div></div></li>
 			<li><div class="dropdown">
 			<button onclick="Drop2()" class="dropbtn">Men's Clothing</button>
+				<!--sub navigation dropdown-->
 			<div id="myDropdown1" class="dropdown-content">
 			<a href="#">Tops</a>
 			<a href="#">Trousers</a>
 			<a href="#">Jeans</a></div></div></li>
 			<li><div class="dropdown">
 			<button onclick="Drop3()" class="dropbtn">Kids & Baby Clothing</button>
+				<!--sub navigation dropdown-->
 			<div id="myDropdown2" class="dropdown-content">
 			<a href="#">Tops</a>
 			<a href="#">Schoolwear</a>
 			<a href="#">Coats</a></div></div></li>
 			<li><div class="dropdown">
 			<button onclick="Drop4()" class="dropbtn">Accessories</button>
+				<!--sub navigation dropdown-->
 			<div id="myDropdown3" class="dropdown-content">
 			<a href="#">Hats & Scarve</a>
 			<a href="#">Belt</a>
@@ -164,11 +179,12 @@ window.onclick = function(event) {
 	<p>fdafddgfdgdagadgafggfgfda</p>
 
 </div><!--End of intro-->
-	
+	<!--Products and other info go in here, the content-->
 </div><!--End of content-->
 <footer>
 
 	<ul>
+		<!--footer is the bottom of the page-->
 		<li><a href="#top">Terms and Conditions</a></li>
 		<li><a href="#top">Privacy Policy</a></li>
 		<li><a href="contact.html">Contact Us</a></li>
@@ -176,6 +192,7 @@ window.onclick = function(event) {
 	</ul>
 	
 </footer><!--End of footer-->
+	<!--'find us on' information ie Facebook, twitter, youtube etc-->
 <div id="find">Follow us: <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a> 
 <a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a>
 <a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a> 
