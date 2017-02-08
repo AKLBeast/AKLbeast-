@@ -1,47 +1,182 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-body {
-	font-family:"Courier New", Courier, monospace;
-	font-size:62.5%
-}
-
 body {
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:14px;
 	background-color:#FFFFFF;
+	margin: 0;
 } 
 .utility {
     z-index: 21;
     position: relative;
     height: 50px;
-    background-color: #46BA4C;
-    border-bottom: 4px solid #00539f;
+    background-color:#FFFFFF;
+    border-bottom: 1px solid #DFDFDF;
     left: 0;
     right: 0;
     top: 0;
-    font: 14px,arial;
     margin: 0 auto;
     box-sizing: content-box;
+	
 }
 .utility_wrapper {
-    margin: 0px auto;
-    height: 32px;
-    width: 100%;
-    max-width: 960px;
-    border-right: 1px solid #3E5A75;
+    margin-left: 3%;
+	margin-right: 3%;
+    height: 50px;
+}
+.utility_nav1 {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.utility_nav1 li a{
+	text-decoration: none;
+	color: #4E514E;
+}
+.utility_nav2 li a{
+	text-decoration: none;
+	color: #4E514E;
+}
+.utility_nav2 {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+	text-decoration: none;
 }
 .utility_section {
     float: right;
     margin: 0px;
     padding: 0px;
+	text-decoration: none;
 }
 .utility_option {
     display: inline;
     float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
     height: inherit;
-    border-left: 1px solid #3E5A75;
+	text-decoration: none;
+}
+/* Full-width input fields */
+.container input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #91DC5A;
+	border-radius:25px;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #074DA3;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+span.reg {
+    float: right;
+    padding-bottom: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
 }
 ul, li {
     margin: 0;
@@ -49,21 +184,23 @@ ul, li {
     list-style: none;
 }
 header ul {
-	margin-top: 0px;
-	margin-right: auto;
-	margin-bottom: 0px;
-	margin-left: auto;
+	margin-left: 25px;
+	margin-right: 25px;
 	list-style:none;
 	padding:10px;
 	position:inherit;
 	letter-spacing: 1px;
-	display:table;
+	display:block;
+	height:80px;
 }
-header li {
+#h1{
 	float:left;
 	display:block;
 }
-
+#h2{
+	float:right;
+	display:block;
+}
 #search ul {
 	margin-top: 0px;
 	margin-right: auto;
@@ -78,16 +215,82 @@ header li {
 #search li {
 	float:left;
 	display:block;
+	padding-top:10px;
 }
 #search input {
-	Height:24px;
+	Height:36px;
+	border-style: solid;
 	border-left:none;
-	border-bottom-right-radius:5px;
-	border-top-right-radius:5px;
+	border-right:none;
+	border-width:1px;
+	border-color:#C7CBC7;
+	padding-left: 12px;
+}
+#img {
+	border-style:solid;
+	border-left:none;
+	Height:34px;
+	border-bottom-right-radius:20px;
+	border-top-right-radius:20px;
+	border-width:1px;
+	border-color:#C7CBC7;
+	padding-right:10px;
+	padding-top:4px;
+}
+#img1 {
+	border-style:solid;
+	border-left:none;
+	Height:24px;
+	border-bottom-right-radius:20px;
+	border-top-right-radius:20px;
+	border-width:1px;
+	border-color:#C7CBC7;
+	padding-right:10px;
+	padding-top:4px;
 }
 #search select {
-	border-bottom-left-radius:5px;
-	border-top-left-radius:5px;
+	border-bottom-left-radius:20px;
+	border-top-left-radius:20px;
+	border-right:none;
+	border-style:solid;
+    border-width:1px;  
+	border-color:#C7CBC7;
+	Height:40px;
+	text-align: center;
+	padding-left: 12px;
+}
+#search button {
+	border-radius: 100%;
+	border-style: solid;
+	background-color:#FFFFFF;
+}
+#search1 ul {
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	list-style:none;
+	position:inherit;
+	letter-spacing: 1px;
+	display:table;
+}
+#search1 li {
+	float:left;
+	display:block;
+}
+#search1 input {
+	Height:26px;
+	border-bottom-left-radius:20px;
+	border-top-left-radius:20px;
+	border-style: solid;
+	border-right:none;
+	border-width:1px;
+	border-color:#C7CBC7;
+	padding-left: 12px;
+}
+#search1 button {
+	border-radius: 50%;
+	border-style: solid;
 }
 nav ul {
 	margin-top: 0px;
@@ -99,14 +302,20 @@ nav ul {
 	position:inherit;
 	letter-spacing: 1px;
 	display:table;
+	float:left;
 }
 nav li {
 	float:left;
 	display:block;
+	padding-top:15px;
 	padding-left:20px;
 	padding-right:20px;
 	margin-left: 10px;
 	margin-right: 10px;
+	border: 2px solid #FFFFFF;
+	border-bottom:none;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
 }
 nav li a {
 	float:left;
@@ -114,11 +323,13 @@ nav li a {
 	width:inherit;
 	text-decoration:none;
 	text-align: middle;
+	color: #4E514E;
 }
-nav ul li a.active:link, nav ul li a.active:visited, nav ul li a:hover {
-    border-color:#7e7e6b;
-	color:#7e7e6b;
-	border-bottom: 2px solid;
+nav ul li.active:link {
+    border-color: #91DC5A;
+}
+nav ul li:hover {
+	border-color: #91DC5A;
 }
 #subnav ul {
 	margin-top: 0px;
@@ -147,9 +358,8 @@ nav ul li a.active:link, nav ul li a.active:visited, nav ul li a:hover {
 	text-align: middle;
 }
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #91DC5A;
     color: white;
-    padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -200,12 +410,13 @@ header img {
 	border: 0px none;
 }
 header {
-	border-bottom:5px solid;
-	border-color:#00539f;
+	margin-left:60px;
+	margin-right:60px;
 }
 nav {
-	border-bottom:25px solid;
-	border-color:#00539f;
+	border-bottom: 2px solid #91DC5A;
+	min-height:55px;
+	
 }
 /* Slideshow container */
 .slideshow-container {
@@ -272,7 +483,7 @@ nav {
   transition: background-color 0.6s ease;
 }
 
-.active1, .dot:hover {
+.active2, .dot:hover {
   background-color: #717171;
 }
 
@@ -292,6 +503,8 @@ nav {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+#intro {
 }
 #tabs a{
 	text-decoration:none;
@@ -349,14 +562,6 @@ form {
 	font-family: "Open Sans",Arial,sans-serif;
 	text-align: center;
 }
-#search select {
-	Height:30px;
-	border-color:#000;
-	font-family: "Open Sans",Arial,sans-serif;
-	text-align: center;
-}
-header {
-}
 .floatright {
 	float:right;
 	margin-right:150px;
@@ -367,7 +572,8 @@ header {
 }
 #content {
 	font-size:1.0em;
-	padding:30px;
+	padding-left:30px;
+	padding-left:30px;
 }
 #slider {
 	padding-left:75px;
@@ -402,21 +608,7 @@ header {
 	width:300px;
 	padding:10px;
 }
-footer {
-	list-style:none;
-	color:#24241E;
-	display:block;
-}
-footer ul {
-	margin-top: 0px;
-	margin-right: auto;
-	margin-bottom: 0px;
-	margin-left: auto;
-	list-style:none;
-	padding:10px;
-	letter-spacing: 1px;
-	display:table;
-}
+
 #title {
 	font-size: 1.2rem;
 	font-family: "Open Sans",Arial,sans-serif;
@@ -547,28 +739,57 @@ footer ul {
 	border:10px;
 	resize: vertical;
 }
-footer li {
-	float:left;
-	display:block;
-	padding-left:30px;
-	padding-right:30px;
-	margin-left: 10px;
-	margin-right: 10px;
-	border-bottom: 2px solid;
-	border-color:#000;
+.pagination{
+	z-index: 21;
+	position: centre;
+	box-sizing: content-box;
+	height:50px;
 }
-footer {
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
 }
 
-footer li a {
-	float:left;
-	display:block;
-	width:inherit;
-	color:#7e7e6b;
+.pagination a.active1 {
+    background-color: #91DC5A;
+    color: white;
+}
+.center {
+    text-align: center;
+}
+.pagination a:hover:not(.active1) {background-color: #ddd;}
+footer {
+	background-color:#0D0936;
+	color:#FFFFFF;
 	text-decoration:none;
 }
-footer ul li:hover {
-    border-color:#7e7e6b;
+
+footer ul {
+	margin-top: 1px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding:10px;
+	letter-spacing:1px;
+	display:table;
+}
+
+#sub li{
+	/*list-style: none;*/
+	display:block;
+	color:#FFFFFF;
+}
+#sub li a{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+#sub li:hover {
+    border-bottom: 2px solid;
+	border-color:#FFFFFF;
 }
 
 #bottom {
@@ -602,8 +823,3 @@ footer ul li:hover {
 	margin-right:2px;
 }
 
-#wrapper {
-	color:#000;
-	margin: 0 auto;
-	width:960px;
-}
