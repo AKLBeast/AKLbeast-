@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fresh Food | FCEPH</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script> function Drop1() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
+<script> function Drop2() {
+    document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
+<script> function Drop3() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
+<script> function Drop4() {
+    document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
+<script> function Drop5() {
+    document.getElementById("myDropdown4").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}</script>
+</head>
+
+<body>
+<div class="utility">
+  <div class="utility_wrapper">
+    <ul class="utility_nav1">
+      <li class="utility_option"><a data-ltc="header-contact" href="contact.html" class="utility_option_link"><img src="images/placeholder.png" width="20" height="21" alt="Locator" /><span>    Store Locator</span></a></li>
+    </ul>
+	<ul class="utility_nav2">
+	  <li class="utility_option"><div id="search1">
+		<ul>
+            <li><input id="to" type="text" name="to" placeholder="Search Products"></input></li>
+			<li><div id="img1"><a href="#"><img src="images/search.png" width="20" height="20" alt="Search" /></a></div></li>
+		</ul>
+		</div><!--End of search--></li>
+      <li class="utility_option"><a data-ltc="header-contact" href="contact.html" class="utility_option_link"><img src="images/account.png" width="20" height="21" alt="Account" /><span>    Your Account</span></a></li>
+      <li class="utility_option"><a data-ltc="header-help" href="help.html" class="utility_option_link"><img src="images/basket.png" width="20" height="21" alt="Basket" /><span>    Your Basket</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="wrapper">
+	<header>
+	<ul>
+	<a href="index.html"><img src="images/logo.png" width="227" height="99" alt="logo" /></a>
+	</ul>
+	
+	</header>
+
+<nav>
+		<ul>
+			<li class="active"><a  href="groceries.html">Groceries</a></li>
+			<li><a href="clothing.html">Clothing</a></li>
+			<li><a href="electronics.html">Electronics</a></li>
+            <li><a href="pharmacy.html">Pharmacy</a></li>
+            <li><a href="household.html">Home & Furniture</a></li>
+            <li><a href="clubcard.html">Clubcard</a></li>
+		</ul>
+</nav><!--End of navigation-->
+<div id="subnav">
+	
+		<ul>
+	
+			<li><div class="dropdown">
+			<a onclick="Drop1()" class="dropbtn">Fresh Food</a>
+			<div id="myDropdown" class="dropdown-content">
+			<a href="#">Fresh Fruit</a>
+			<a href="#">Fresh Vegetable</a>
+			<a href="#">Salad</a></div></div></li>
+			<li><div class="dropdown">
+			<a onclick="Drop2()" class="dropbtn">Bakery</a>
+			<div id="myDropdown1" class="dropdown-content">
+			<a href="#">Bread</a>
+			<a href="#">Pancake</a>
+			<a href="#">Cake</a></div></div></li>
+			<li><div class="dropdown">
+			<a onclick="Drop3()" class="dropbtn">Frozen Food</a>
+			<div id="myDropdown2" class="dropdown-content">
+			<a href="#">Ice Cream</a>
+			<a href="#">Frozen Pizza</a>
+			<a href="#">Frozen Food</a></div></div></li>
+			<li><div class="dropdown">
+			<a onclick="Drop4()" class="dropbtn">Cupboard Food</a>
+			<div id="myDropdown3" class="dropdown-content">
+			<a href="#">Spaghetti</a>
+			<a href="#">Tins</a>
+			<a href="#">Cereal</a></div></div></li>
+			<li><div class="dropdown">
+			<a onclick="Drop5()" class="dropbtn">Drinks</a>
+			<div id="myDropdown4" class="dropdown-content">
+			<a href="#">Fizzy</a>
+			<a href="#">Kids</a>
+			<a href="#">Water</a>
+			<a href="#">Tea</a>
+			<a href="#">Coffee</a>
+			<a href="#">Wine</a>
+			<a href="#">Beer</a></div></div></li>
+			
+		</ul>
+	
+</div><!--End of subnavigation-->
+
+<div id="content">
+
+<div id="intro1">
+
+	<h2>Fresh Foods</h2>
+	<p>FCEPH ........</p>
+	<ul class="breadcrumb">
+  <li><a href="groceries.html">Groceries</a></li>
+  <li>Fresh Foods</li>
+</ul>
+</div><!--End of intro-->
+<div id="main">
+<div id="filter" style="float:left">
+<form>
+<h3>Filter</h3>
+<input type="checkbox"> ...
+<input type="checkbox"> ...
+</form>
+</div>
+<div id="Product" >
+<ul class="gridView">
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+<li class="gridItem">
+<img src="images/item1.png" width="175" height="150" alt="item"/>
+<div id="productContent">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<h3></h3>
+<input type="text" value="1" name="quantity"/>
+<button type="submit">Add</button>
+</div>
+</li>
+</ul>
+</div>
+
+</div>
+	<div class="center">
+	<div class="pagination" >
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a class="active1" href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a></div>
+</div>
+</div><!--End of content-->
+<footer>
+	<ul>
+		<li>
+        <h4>FCEPH Help & FAQ</h4>
+        <ul id="sub">
+        <li><a href="#top">Help Centre</a></li>
+		<li><a href="#top">Store Locator</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+		<li><a href="#top">Copyright&copy </a></li>
+        </ul>
+        </li>     
+	</ul>
+	
+</footer><!--End of footer-->
+<div id="find">Follow us: <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a> 
+<a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a>
+<a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a> 
+<a href="https://youtube.com/"><img src="images/youtube.png" width="20" height="21" alt="Youtube" /></a></div>
+</div> <!--End of wrapper-->
+</body>
+</html>
