@@ -431,6 +431,7 @@ nav ul li:hover {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
+	margin-top: 18px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -650,7 +651,7 @@ form {
 	height: 50em;
 }
 #filter form{
-	max-width: 200px;
+	width: 200px;
 	border:none;
 }
 #Product{
@@ -663,8 +664,26 @@ form {
 }
 #content {
 	font-size:1.0em;
-	padding-left:30px;
-	padding-right:30px;
+	padding-left:8%;
+	padding-right:8%;
+}
+#Catagorys li{
+	padding-left: 10px;
+	border-bottom:1px solid;
+	border-color: #91DC5A;
+	text-decoration: none;
+	color: #000;
+}
+#Catagorys a{
+	text-decoration: none;
+}
+#Catagorys li:hover{
+	text-decoration: underline;
+}
+#itemDesc{
+	Border: 1px solid #DFDFDF;
+	width: 800px;
+	padding: 20px;
 }
 #slider {
 	padding-left:75px;
@@ -675,8 +694,45 @@ form {
 	padding-right:12%;
 }
 #content1 img{
-	padding-left:3%;
-	padding-right:3%;
+	padding-left:2%;
+	padding-right:2%;
+}
+.container {
+  position: relative;
+  width: 270px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 .slideshow-container img {
 	margin: 13px;
@@ -839,12 +895,52 @@ form {
 	border:10px;
 	resize: vertical;
 }
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .pagination{
 	z-index: 21;
 	position: centre;
 	box-sizing: content-box;
 	height:50px;
 	clear:both;
+	left:0;
+	right:0;
 }
 .pagination a {
     color: black;
@@ -924,4 +1020,3 @@ footer ul {
 	margin-left:2px;
 	margin-right:2px;
 }
-
