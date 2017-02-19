@@ -94,6 +94,24 @@
             }
             }
             }</script>
+        <script> function Drop6() {
+            document.getElementById("myDropdown5").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+            }
+            }
+            }</script>
     </head>
 
     <body>
@@ -117,7 +135,7 @@
         <div id="wrapper">
             <header>
                 <ul>
-                    <a href="index.html"><img src="images/logo.png" width="227" height="99" alt="logo" /></a>
+                    <a href="index.html"><img src="images/logo1.png" width="227" height="99" alt="logo" /></a>
                 </ul>
 
             </header>
@@ -139,10 +157,23 @@
                     <li><div class="dropdown">
                             <a onclick="Drop1()" class="dropbtn">Fresh Food</a>
                             <div id="myDropdown" class="dropdown-content">
-                                <a href="groceries-freshfood.html">All Fresh Food</a>
-                                <a href="#">Fresh Fruit</a>
+                                <a href="freshfood.html">All Fresh Food</a>
+                                <a href="fruit.html">Fresh Fruit</a>
                                 <a href="#">Fresh Vegetable</a>
-                                <a href="#">Salad</a></div></div></li>
+                                <a href="#">Salads</a>
+                                <a href="#">Coleslaw & Dips</a>
+                                <a href="#">Fruit Juice & Smoothies</a>
+                                <a href="#">Milk, Eggs & Butter</a>
+                                <a href="#">Yoghurts</a>
+                                <a href="#">Cheese</a>
+                                <a href="#">Dairy Alternatives</a>
+                                <a href="#">Fresh Meet & Poultry</a>
+                                <a href="#">Fish & Seafood</a>
+                                <a href="#">Cooked Meats & Sandwich Fillers</a>
+                                <a href="#">Sliced Cooked Meat</a>
+                                <a href="#">Pies</a>
+                                <a href="#">Ready Meals</a>
+                            </div></div></li>
                     <li><div class="dropdown">
                             <a onclick="Drop2()" class="dropbtn">Bakery</a>
                             <div id="myDropdown1" class="dropdown-content">
@@ -153,25 +184,43 @@
                     <li><div class="dropdown">
                             <a onclick="Drop3()" class="dropbtn">Frozen Food</a>
                             <div id="myDropdown2" class="dropdown-content">
+                                <a href="#">All Frozen Food</a>
                                 <a href="#">Ice Cream</a>
                                 <a href="#">Frozen Pizza</a>
                                 <a href="#">Frozen Food</a></div></div></li>
                     <li><div class="dropdown">
                             <a onclick="Drop4()" class="dropbtn">Cupboard Food</a>
                             <div id="myDropdown3" class="dropdown-content">
+                                <a href="#">All Coupboard Food</a>
                                 <a href="#">Spaghetti</a>
                                 <a href="#">Tins</a>
                                 <a href="#">Cereal</a></div></div></li>
                     <li><div class="dropdown">
                             <a onclick="Drop5()" class="dropbtn">Drinks</a>
                             <div id="myDropdown4" class="dropdown-content">
-                                <a href="#">Fizzy</a>
+                                <a href="#">All Drinks</a>
+                                <a href="#">Fizzy Drinks</a>
                                 <a href="#">Kids</a>
                                 <a href="#">Water</a>
                                 <a href="#">Tea</a>
                                 <a href="#">Coffee</a>
                                 <a href="#">Wine</a>
                                 <a href="#">Beer</a></div></div></li>
+                    <li><div class="dropdown">
+                            <a onclick="Drop6()" class="dropbtn">Household</a>
+                            <div id="myDropdown5" class="dropdown-content">
+                                <a href="#">All Household</a>
+                                <a href="#">Laundry</a>
+                                <a href="#">Fabric Conditioners</a>
+                                <a href="#">Toilet Roll</a>
+                                <a href="#">Kitchen Roll</a>
+                                <a href="#">Tissues</a>
+                                <a href="#">Cleaning</a>
+                                <a href="#">Dishwasher</a>
+                                <a href="#">Air Fresheners</a>
+                                <a href="#">Food Storage</a>
+                                <a href="#">Lightbulbs</a>
+                            </div></div></li>
 
                 </ul>
 
@@ -179,23 +228,40 @@
 
             <div id="content">
 
-                <div id="intro">
+                <div id="intro1">
 
-                    <h2> gfdsgf </h2>
-                    <p>fdafddgfdgdagadgafggfgfda</p>
-
+                    <h2>Groceries</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur arcu eget est ornare, at commodo purus blandit. 
+                        Ut magna risus, ultricies sed ex in, aliquet iaculis lectus. In non maximus ligula, sit amet tincidunt elit. </p>
                 </div><!--End of intro-->
-
-                <div id="filter">
-
-                </div>
                 <div id="main">
-
+                    <div class="responsive">
+                        <div class="img">
+                            <a target="_blank" href="#">
+                                <img src="f.jpg" alt="m" width="800" height="400">
+                            </a>
+                            <div class="desc">Add a description of the image here</div>
+                        </div>
+                    </div><br/>
+                    <div class="responsive">
+                        <div class="img">
+                            <a target="_blank" href="#">
+                                <img src="f.jpg" alt="m" width="400" height="200">
+                            </a>
+                            <div class="desc">Add a description of the image here</div>
+                        </div>
+                    </div>
+                    <div class="responsive">
+                        <div class="img">
+                            <a target="_blank" href="#">
+                                <img src="f.jpg" alt="m" width="400" height="200">
+                            </a>
+                            <div class="desc">Add a description of the image here</div>
+                        </div>
+                    </div>
                 </div>
-
             </div><!--End of content-->
             <footer>
-
                 <ul>
                     <li>
                         <h4>FCEPH Help & FAQ</h4>
