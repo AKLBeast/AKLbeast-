@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>FCEPH</title>
         <link href="css/style.css" rel="stylesheet" type="text/css" />
-
+<!-- Script for the slider -->
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -33,6 +33,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+	    <!-- Script for the login popup -->
         <script>
             // Get the modal
             var modal = document.getElementById('id01');
@@ -47,13 +48,17 @@ function showSlides(n) {
     </head>
 
     <body>
+	    <!-- Utility, the top section of the page -->
         <div class="utility">
             <div class="utility_wrapper">
                 <ul class="utility_nav1">
+			<!-- Store locator link -->
                     <li class="utility_option"><a data-ltc="header-contact" href="contact.html" class="utility_option_link"><img src="images/placeholder.png" width="20" height="21" alt="Locator" /><span>    Store Locator</span></a></li>
-                    <li class="utility_option"><a data-ltc="header-help" href="help.html" class="utility_option_link"><img src="images/help.png" width="20" height="21" alt="Locator" /><span>   Help</span></a></li>
+                    <!-- Help link -->
+		<li class="utility_option"><a data-ltc="header-help" href="help.html" class="utility_option_link"><img src="images/help.png" width="20" height="21" alt="Locator" /><span>   Help</span></a></li>
                 </ul>
                 <ul class="utility_nav2">
+			<!-- Link for the login popup -->
                     <li class="utility_option"><a data-ltc="header-sign" href="#" class="utility_option_link" onclick="document.getElementById('id01').style.display='block'"><img src="images/account.png" width="20" height="21" alt="Locator" /><span>    Sign in/Register</span></a></li>
                     <div id="id01" class="modal"> 
                         <form class="modal-content animate" action="action_page.php">
@@ -110,7 +115,7 @@ function showSlides(n) {
             </header> <!--End of header-->
 
             <nav>
-
+<!-- navigation bar with dropdown -->
                 <ul>
 
                     <div class="drop" style="float:left;"><li ><a href="groceries.html">Groceries</a>
@@ -189,6 +194,7 @@ function showSlides(n) {
 
             </nav><!--End of navigation-->
   <div id="intro">
+	  <!-- slider -->
                     <div class="slideshow-container">
                         <div class="mySlides fade">
                             <img src="clothes.jpg" style="width:100%">
@@ -219,6 +225,7 @@ function showSlides(n) {
 
                 </div><!--End of intro-->
             <div id="content" >
+		    <!-- images with description boxes -->
                     <h2 style="text-align:center"> More from FCEPH </h2>
 					<div class="responsive">
 					<div class="img">
@@ -245,7 +252,7 @@ function showSlides(n) {
 
             </div><!--End of content-->
             <footer>
-
+<!-- bottom of the page -->
                 <ul>
                     <li>
                         <h4>FCEPH Help & FAQ</h4>
