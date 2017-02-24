@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sign Up | FCEPH</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+            modal.style.display = "none";
+            }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="utility">
+            <div class="utility_wrapper">
+                <ul class="utility_nav1">
+                    <li class="utility_option"><a data-ltc="header-contact" href="contact.html" class="utility_option_link"><img src="images/placeholder.png" width="20" height="21" alt="Locator" /><span>    Store Locator</span></a></li>
+                    <li class="utility_option"><a data-ltc="header-help" href="help.html" class="utility_option_link"><img src="images/help.png" width="20" height="21" alt="Locator" /><span>   Help</span></a></li>
+                </ul>
+                <ul class="utility_nav2">
+                    <li class="utility_option"><a data-ltc="header-sign" href="#" class="utility_option_link" onclick="document.getElementById('id01').style.display='block'"><img src="images/account.png" width="20" height="21" alt="Locator" /><span>    Sign in/Register</span></a></li>
+                    <div id="id01" class="modal"> 
+                        <form class="modal-content animate" action="account.html">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            </div>
+
+                            <div class="container">
+                                <label><b>Email</b></label>
+                                <input type="email" placeholder="Enter Email" name="uname" required>
+
+                                <label><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <button type="submit">Login</button>
+                                <input type="checkbox" checked="checked"> Remember me
+                                <span class="reg"><a href="signup.html">New Customer?</a></span>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw"><a href="#">Forgot password?</a></span>
+                            </div>
+                        </form>
+                    </div>
+                </ul>
+            </div>
+
+        </div><!--End of utility-->
+        <div id="wrapper">
+
+            <header>
+                <ul>
+                    <li id="h1"><a href="index.html"><img src="images/logo.png" width="227" height="99" alt="logo" /></a></li>
+                    <!--This will be our logo which will be a link to the home page-->
+                    <li id="h2"><div id="search">
+                            <ul>
+                                <li ><div id="searchbar">
+                                        <select name="searchdropdown">
+                                            <option value="1"> Groceries</option>
+                                            <option value="2"> Clothing</option>
+                                            <option value="3"> Electronics</option>
+                                            <option value="4"> Pharmacy</option>
+                                            <option value="5"> Household</option>
+                                        </select>
+                                    </div></li>
+                                <li><input type="text" name="to" placeholder="Search..."></li>
+                                <li><div id="img"><a href="#"><img src="images/search.png" width="30" height="30" alt="Search" /></a></div></li>
+                            </ul>
+
+                        </div></li><!--End of search bar-->
+
+                </ul>
+            </header> <!--End of header-->
+
+            <nav>
+
+                <ul>
+
+                    <div class="drop" style="float:left;"><li ><a href="groceries.html">Groceries</a>
+
+                            <div class="dropdown-content1" style="left:0;">
+
+                                <a href="groceries.html" style="float:left">All Groceries</a>
+								 <a href="#" style="float:right" ><img src="images/recipes1.png" width="600" height="200" alt="Recipes"/></a>
+                                <a href="freshfood.html" style="Clear: left">Fresh Food</a>
+                                <a href="#" style="Clear: left">Bakery</a>
+								<a href="#" style="Clear: left">Food Cupboard</a>
+								<a href="#" style="Clear: left">Health & Beauty</a>
+                               
+                            </div>
+                        </li></div>
+                    <div class="drop" style="float:left;"><li><a href="clothing.html">Clothing</a>
+                            <div class="dropdown-content1" style="left:0;">
+
+                                <a href="clothing.html" style="float:left">All Clothing </a>
+								<a href="#" style="float:right" style="Clear: both"><img src="images/recipes1.png" width="600" height="200" alt="Spring Time Clothing"/></a>
+                                <a href="#" style="Clear: left">Women</a>
+                                <a href="#" style="Clear: left">Men</a>
+								<a href="#" style="Clear: left">Kids</a>
+								<a href="#" style="Clear: left">Baby</a>
+                                
+                            </div>
+                        </li></div>
+                    <div class="drop" style="float:left;"><li><a href="electronics.html">Electronics</a>
+                            <div class="dropdown-content1" style="left:0;">
+
+                                <a href="electronics.html" style="float:left">All Electronics</a>
+								<a href="#" style="float:right" style="Clear: both"><img src="images/recipes1.png" width="600" height="200" alt="Home Cinema"/></a>
+                                <a href="#" style="Clear: left">Household Appliances</a>
+                                <a href="#" style="Clear: left">Heating & Cooling</a>
+								<a href="#" style="Clear: left">Laptop & PCs</a>
+								<a href="#" style="Clear: left">Personal Electrical</a>
+                                
+                            </div>
+                        </li></div>
+                    <div class="drop" style="float:left;"><li><a href="pharmacy.html">Pharmacy</a>
+                            <div class="dropdown-content1" style="left:0;">
+
+                                <a href="#" style="float:left">All Pharmacy</a>
+								<a href="#"style="float:right" style="Clear: both"><img src="images/recipes1.png" width="600" height="200" alt="Vitamins"/></a>
+                                <a href="#"style="Clear: left">Health & Pharmacy</a>
+                                <a href="#"style="Clear: left">Beauty & Skincare</a>
+								<a href="#"style="Clear: left">Fragrance</a>
+								<a href="#"style="Clear: left">Baby & Child</a>
+                                
+                            </div>
+                        </li></div>
+                    <div class="drop" style="float:left;"><li><a href="household.html">Home & Furniture</a>
+                            <div class="dropdown-content1" style="left:0;">
+
+                                <a href="household.html" style="float:left">All Home & Furniture</a>
+								<a href="#"style="float:right" style="Clear: both"><img src="images/recipes1.png" width="600" height="200" alt="Spring"/></a>
+                                <a href="#"style="Clear: left">Living Room</a>
+                                <a href="#"style="Clear: left">Bedroom</a>
+								<a href="#"style="Clear: left">Home Accessories</a>
+								<a href="#"style="Clear: left">Lighting</a>
+                                
+                            </div>
+                        </li></div>
+                    <div class="drop" style="float:left;"><li><a href="clubcard.html">Clubcard</a>
+                            <div class="dropdown-content1" style="left:0;">
+
+                                <a href="#" style="float:left">Link 1</a>
+								<a href="#"style="float:right" style="Clear: both"><img src="images/recipes1.png" width="600" height="200" alt="Savings"/></a>
+                                <a href="#"style="Clear: left">Link 2</a>
+                                <a href="#"style="Clear: left">Link 3</a>
+                                
+                            </div>
+                        </li></div>
+
+                </ul>
+
+            </nav><!--End of navigation-->
+  <div id="intro">
+                  
+
+                </div><!--End of intro-->
+                        <div id="content" >
+			<h3>Register</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur arcu eget est ornare, at commodo purus blandit. 
+                Ut magna risus, ultricies sed ex in, aliquet iaculis lectus. In non maximus ligula, sit amet tincidunt elit.</p>
+                    <form action="account.html">
+					<label><b>Title</b></label>
+					<select name="title">
+                                            <option value="1"> Please Select</option>
+											<option value="2"> Miss</option>
+                                            <option value="3"> Mr</option>
+                                            <option value="4"> Mrs</option>
+                                            <option value="5"> Ms</option>
+                                        </select>
+					<input type="text" name="fname" required>
+					<label><b>First Name</b></label>
+					<input type="text" name="fname" required>
+					<label><b>Last Name</b></label>
+					<input type="text" name="sname" required>
+					<label><b>Email Address</b></label>
+					<input type="email" name="email" required>
+					<label><b>Password</b></label>
+					<input type="password" name="psw" required>
+					<label><b>Confirm Password</b></label>
+					<input type="password" name="psw" required>
+					<label><b>Postcode</b></label>
+					<input type="text" name="psw" required>
+					
+					
+					</form>
+					<div class="reg">
+					<h3>Terms and condition</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur arcu eget est ornare, at commodo purus blandit. 
+                Ut magna risus, ultricies sed ex in, aliquet iaculis lectus. In non maximus ligula, sit amet tincidunt elit.</p>
+                                <input type="checkbox" > I agree with the terms and conditions
+                            </div>
+					<button type="submit">Register</button>
+            </div><!--End of content-->
+            <footer>
+
+                <ul>
+                    <li>
+                        <h4>FCEPH Help & FAQ</h4>
+                        <ul id="sub">
+                            <li><a href="#top">Help Centre</a></li>
+                            <li><a href="#top">Store Locator</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="#top">Copyright&copy </a></li>
+                        </ul>
+                    </li>     
+                </ul>
+
+            </footer><!--End of footer-->
+            <div id="find">Follow us: 
+                <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a>
+                <a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a>
+                <a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a>
+                <a href="https://youtube.com/"><img src="images/youtube.png" width="20" height="21" alt="Youtube" /></a></div>
+            <!--Youtube, Facebook, Twitter and other links-->
+        </div> <!--End of wrapper-->
+    </body>
+</html>
