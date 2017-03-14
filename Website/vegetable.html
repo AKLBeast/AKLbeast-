@@ -8,25 +8,25 @@
             document.getElementById("myDropdown").classList.toggle("show");
             }
 			function Drop2() {
-			document.getElementById("myDropdown1").classList.toggle("show");
-            }
-			function Drop3() {
 			document.getElementById("myDropdown2").classList.toggle("show");
             }
-			function Drop4() {
+			function Drop3() {
 			document.getElementById("myDropdown3").classList.toggle("show");
             }
-			function Drop5() {
+			function Drop4() {
 			document.getElementById("myDropdown4").classList.toggle("show");
             }
-			function Drop6() {
+			function Drop5() {
 			document.getElementById("myDropdown5").classList.toggle("show");
             }
-			function Drop7() {
+			function Drop6() {
 			document.getElementById("myDropdown6").classList.toggle("show");
             }
-			function Drop8() {
+			function Drop7() {
 			document.getElementById("myDropdown7").classList.toggle("show");
+            }
+			function Drop8() {
+			document.getElementById("myDropdown8").classList.toggle("show");
             }
 
             // Close the dropdown menu if the user clicks outside of it
@@ -233,9 +233,33 @@
                     <div id="filter" style="float:left">
                         <form>
                             <h3>Filter</h3>
-                            <input type="checkbox"> ...
-                            <input type="checkbox"> ...
+							<label>Sort By: </label>
+							<select name="searchdropdown">
+                                <option value="1"> Price - Low to High</option>
+                                <option value="2"> Price - High to Low</option>
+                                <option value="3"> Product Name - A - Z</option>
+                                <option value="4"> Product Name - Z - A</option>
+                                <option value="5"> Top Seller</option>
+                            </select>
                         </form>
+						<div id="filterb"><label>Department</label></div>
+						<ul>
+							<a href="fruit.html"><li id="list">
+                                    <h4>Apple</h4>
+                                </li></a>
+								<a href="fruit.html"><li id="list">
+                                    <h4>Pear</h4>
+                                </li></a>
+								<a href="fruit.html"><li id="list">
+                                    <h4>Banana</h4>
+                                </li></a>
+								<a href="fruit.html"><li id="list">
+                                    <h4>Strawberry</h4>
+                                </li></a>
+								<a href="fruit.html"><li id="list">
+                                    <h4>Pineapple</h4>
+                                </li></a>
+						</ul>
                     </div>
                     <div id="Product" >
                         <ul class="gridView">
