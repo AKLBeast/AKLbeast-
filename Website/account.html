@@ -5,17 +5,6 @@
         <title>Your Account | FCEPH</title>
         <link href="css/style.css" rel="stylesheet" type="text/css" />
 
-        <script>
-            // Get the modal
-            var modal = document.getElementById('id01');
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-            if (event.target == modal) {
-            modal.style.display = "none";
-            }
-            }
-        </script>
     </head>
 
     <body>
@@ -144,8 +133,63 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur arcu eget est ornare, at commodo purus blandit. 
                 Ut magna risus, ultricies sed ex in, aliquet iaculis lectus. In non maximus ligula, sit amet tincidunt elit.</p>
                 </div><!--End of intro-->
-                  <div style="float:left;" width="300"></div>  
-				  <div style="float:right;" width="800"></div>  
+				<div id="option">
+                  <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
+  <button class="tablinks" onclick="openCity(event, 'Address Book')">Address Book</button>
+  <button class="tablinks" onclick="openCity(event, 'Payment Details')">Payment Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Password')">Password</button>
+  <button class="tablinks" onclick="openCity(event, 'Orders')">Orders</button>
+</div>
+
+<div id="Overview" class="tabcontent">
+  <h3>Overview</h3>
+  <div> 
+	<p>Account Information</p>
+	<br>
+	<label><b>Name</b></label> <p>Jenny</p>
+	<label><b>Address</b></label> <p>Jenny</p>
+	<label><b>Name</b></label> <p>Jenny</p>
+  </div>
+				
+</div>
+
+<div id="Address Book" class="tabcontent">
+  <h3>Address Book</h3>
+  <p>...</p> 
+</div>
+
+<div id="Payment Details" class="tabcontent">
+  <h3>Payment Details</h3>
+  <p>...</p>
+</div>
+<div id="Password" class="tabcontent">
+  <h3>Password</h3>
+  <p>...</p>
+</div>
+<div id="Orders" class="tabcontent">
+  <h3>Orders</h3>
+  <p>...</p>
+</div>
+</div>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
             </div><!--End of content-->
             <footer>
 
@@ -153,20 +197,19 @@
                     <li>
                         <h4>FCEPH Help & FAQ</h4>
                         <ul id="sub">
-                            <li><a href="#top">Help Centre</a></li>
-                            <li><a href="#top">Store Locator</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="#top">Copyright&copy </a></li>
+                            <li><a href="contact.html">Help Centre</a></li>
+                            <li><a href="map.html">Store Locator</a></li>
+                            <li><a href="contact.html#a">Contact Us</a></li>
                         </ul>
                     </li>     
                 </ul>
 
             </footer><!--End of footer-->
-            <div id="find">Follow us: 
-                <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a>
-                <a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a>
-                <a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a>
-                <a href="https://youtube.com/"><img src="images/youtube.png" width="20" height="21" alt="Youtube" /></a></div>
+<div id="copy" style="padding-top:15px; float:left; padding-left:15px">&copyFCEHP 2017 All Rights Reserved</div>
+	<div id="find">Follow us: <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a>
+	<a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a> 
+	<a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a> 
+	<a href="https://youtube.com/"><img src="images/youtube.png" width="20" height="21" alt="Youtube" /></a></div>
             <!--Youtube, Facebook, Twitter and other links-->
         </div> <!--End of wrapper-->
     </body>
