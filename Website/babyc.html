@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Baby Clothing | FCEPH</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script> function Drop1() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+			function Drop2() {
+			document.getElementById("myDropdown2").classList.toggle("show");
+            }
+			function Drop3() {
+			document.getElementById("myDropdown3").classList.toggle("show");
+            }
+			function Drop4() {
+			document.getElementById("myDropdown4").classList.toggle("show");
+            }
+			function Drop5() {
+			document.getElementById("myDropdown5").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+            }
+            }
+            }</script>
+    </head>
+
+    <body>
+        <div class="utility">
+            <div class="utility_wrapper">
+                <ul class="utility_nav1">
+                    <li class="utility_option"><a href="contact.html" class="utility_option_link"><img src="images/placeholder.png" width="20" height="21" alt="Locator" /><span>    Store Locator</span></a></li>
+                </ul>
+                <ul class="utility_nav2">
+                    <li class="utility_option"><div id="search1">
+                            <ul>
+                                <li><input id="to" type="text" name="to" placeholder="Search Products" onclick="myFunction()" onkeyup="filterFunction()"></input></li>
+                                <li><div id="img1"><a href="#"><img src="images/search.png" width="20" height="20" alt="Search" /></a></div></li>
+								<div id="dr" class="droo"><a href="#">Bags</a>
+											<a href="#">Base</a>
+											<a href="#">Coleslaw</a>
+											<a href="#">Contact</a>
+											<a href="#">Custom</a>
+											<a href="#">Support</a>
+											<a href="#">Tools</a>
+  </div>
+							</ul>
+                        </div><!--End of search--></li>
+                    <li class="utility_option"><a href="account.html" class="utility_option_link"><img src="images/account.png" width="20" height="21" alt="Account" /><span>    Your Account</span></a></li>
+                    <li class="utility_option"><a href="basket.html" class="utility_option_link"><img src="images/basket.png" width="20" height="21" alt="Basket" /><span>    Your Basket</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="wrapper">
+            <header>
+                <ul>
+                    <a href="index.html"><img src="images/logo.png" width="227" height="99" alt="logo" /></a>
+                </ul>
+
+            </header>
+
+            <nav>
+                <ul>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a  href="groceries.html">Groceries</a></li>
+                    <li class="active" style="margin-left: 10px; margin-right: 10px;"><a href="clothing.html">Clothing</a></li>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a href="electronics.html">Electronics</a></li>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a href="pharmacy.html">Pharmacy</a></li>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a href="household.html">Home & Furniture</a></li>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a href="clubcard.html">Clubcard</a></li>
+                </ul>
+            </nav><!--End of navigation-->
+            <div id="subnav">
+
+                <ul>
+
+                    <li><div class="dropdown">
+                            <a onclick="Drop1()" class="dropbtn">Women's Clothing</a>
+                            <div id="myDropdown" class="dropdown-content">
+								<a href="woman.html">All Women's Clothing</a>
+                                <a href="wcoat.html">Coats & Jackets</a>
+                                <a href="wdress.html">Dresses</a>
+                                <a href="wjeans.html">Jeans</a>
+                                <a href="wjumper.html">Jumpers & Cardigans</a>
+                                <a href="wskirt.html">Skirts</a>
+								<a href="wtrousers.html">Trousers</a>
+								<a href="wtop.html">Tops & T-shirts</a>
+								<a href="wshort.html">Shorts</a>
+								<a href="wnightwear.html">Nightwear</a>
+								<a href="wshoes.html">Shoes</a>
+                            </div></div></li>
+                    <li><div class="dropdown">
+                            <a onclick="Drop2()" class="dropbtn">Men's Clothing</a>
+                            <div id="myDropdown2" class="dropdown-content">
+							<a href="man.html">All Men's Clothing</a>
+                                <a href="mcoat.html">Coats & Jackets</a>
+                                <a href="mjeans.html">Jeans</a>
+                                <a href="mjumper.html">Jumpers & Cardigans</a>
+								<a href="mtrousers.html">Trousers</a>
+								<a href="mtop.html">Tops & T-shirts</a>
+								<a href="mshort.html">Shorts</a>
+								<a href="mnightwear.html">Nightwear</a>
+								<a href="mshoes.html">Shoes</a>
+								</div></div></li>
+                    <li><div class="dropdown">
+                            <a onclick="Drop3()" class="dropbtn">Accessories</a>
+                            <div id="myDropdown3" class="dropdown-content">
+							<a href="accessories.html">All Accessories</a>
+                                <a href="bags.html">Bags</a>
+                                <a href="jewel.html">Jewellery</a>
+                                <a href="ties.html">Ties</a>
+                                <a href="socks.html">Socks</a>
+                                <a href="belt.html">Belt</a>
+                                <a href="watches.html">Watches</a>
+								</div></div></li>
+					<li><div class="dropdown">
+                            <a onclick="Drop4()" class="dropbtn">Kids Clothing</a>
+                            <div id="myDropdown4" class="dropdown-content">
+							<a href="kids.html">All Kids Clothing</a>
+								<a href="school.html">School Uniform</a>
+                                <a href="kcoat.html">Coats & Jackets</a>
+                                <a href="kdress.html">Dresses</a>
+                                <a href="kjumper.html">Jumpers & Cardigans</a>
+                                <a href="kskirts.html">Skirts</a>
+								<a href="ktrousers.html">Trousers</a>
+								<a href="ktop.html">Tops & T-shirts</a>
+								<a href="knightwear.html">Nightwear</a>
+								<a href="kshoes.html">Shoes</a>
+								</div></div></li>
+					<li><div class="dropdown">
+                            <a onclick="Drop5()" class="dropbtn">Baby Clothing</a>
+                            <div id="myDropdown5" class="dropdown-content">
+							<a href="babyc.html">All Baby Clothing</a>
+                                <a href="babywear.html">Babywear</a>
+                                <a href="babyb.html">Baby Boys</a>
+								<a href="babyg.html">Baby Girls</a>
+								</div></div></li>
+                </ul>
+
+            </div><!--End of subnavigation-->
+
+            <div id="content">
+
+                <div id="intro1">
+
+                    <h2>Baby Clothing</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur arcu eget est ornare, at commodo purus blandit. 
+                        Ut magna risus, ultricies sed ex in, aliquet iaculis lectus. In non maximus ligula, sit amet tincidunt elit. </p>
+                    <ul class="breadcrumb">
+                        <li><a href="clothing.html">Clothing</a></li>
+                        <li>Baby Clothing</li>
+
+                    </ul>
+                </div><!--End of intro-->
+                <div id="main">
+                    <div id="Catagorys" style="float:left" width="300">
+                        <ul >
+						<a href="school.html"><li id="list">
+                                    <h4>School Uniform</h4>
+                                </li></a>
+                            <a href="kcoat.html"><li id="list">
+                                    <h4>Coats & Jackets</h4>
+                                </li></a>
+                            <a href="kdress.html"><li id="list">
+                                    <h4>Dresses</h4>
+                                </li></a>
+                            <a href="kjumper.html"><li id="list">
+                                    <h4>Jumpers & Cardigans</h4>
+                                </li></a>
+                            <a href="kskirt.html"><li id="list">
+                                    <h4>Skirts</h4>
+                                </li></a>
+                            <a href="ktrousers.html"><li id="list">
+                                    <h4>Trousers</h4>
+                                </li></a>
+                            <a href="ktop.html"><li id="list">
+                                    <h4>Tops & T-shirts</h4>
+                                </li></a>
+                            <a href="knightwear.html"><li id="list">
+                                    <h4>Nightwear</h4>
+                                </li></a>
+                            <a href="kshoes.html"><li id="list">
+                                    <h4>Shoes</h4>
+                                </li></a>
+                        </ul>
+                    </div>
+                    <div id="Info" style="float:right">
+                        <div class="responsive">
+                            <div class="img">
+                                <a target="_blank" href="#">
+                                    <img src="f.jpg" alt="m" width="800" height="400">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div><br/>
+                        <div class="responsive">
+                            <div class="img">
+                                <a target="_blank" href="#">
+                                    <img src="f.jpg" alt="m" width="400" height="200">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div>
+                        <div class="responsive">
+                            <div class="img">
+                                <a target="_blank" href="#">
+                                    <img src="f.jpg" alt="m" width="400" height="200">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+				<script>
+function myFunction() {
+    document.getElementById("dr").classList.toggle("show");
+}
+				function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("to");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("dr");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+            </div><!--End of content-->
+            <footer>
+
+                <ul>
+                    <li>
+                        <h4>FCEPH Help & FAQ</h4>
+                        <ul id="sub">
+                            <li><a href="contact.html">Help Centre</a></li>
+                            <li><a href="map.html">Store Locator</a></li>
+                            <li><a href="contact.html#a">Contact Us</a></li>
+                        </ul>
+                    </li>     
+                </ul>
+
+            </footer><!--End of footer-->
+<div id="copy" style="padding-top:15px; float:left; padding-left:15px">&copyFCEHP 2017 All Rights Reserved</div>
+	<div id="find">Follow us: <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a>
+	<a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a> 
+	<a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a> 
+	<a href="https://youtube.com/"><img src="images/youtube.png" width="20" height="21" alt="Youtube" /></a></div>
+        </div> <!--End of wrapper-->
+    </body>
+</html>
