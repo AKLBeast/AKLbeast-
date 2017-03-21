@@ -2,54 +2,47 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Yoghurts | FCEPH</title>
+        <title>Pets | FCEPH</title>
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <script> function Drop1() {
-                document.getElementById("myDropdown").classList.toggle("show");
+            document.getElementById("myDropdown").classList.toggle("show");
             }
-            function Drop2() {
-                document.getElementById("myDropdown2").classList.toggle("show");
+			function Drop2() {
+			document.getElementById("myDropdown1").classList.toggle("show");
             }
-            function Drop3() {
-                document.getElementById("myDropdown3").classList.toggle("show");
+			function Drop3() {
+			document.getElementById("myDropdown2").classList.toggle("show");
             }
-            function Drop4() {
-                document.getElementById("myDropdown4").classList.toggle("show");
+			function Drop4() {
+			document.getElementById("myDropdown3").classList.toggle("show");
             }
-            function Drop5() {
-                document.getElementById("myDropdown5").classList.toggle("show");
+			function Drop5() {
+			document.getElementById("myDropdown4").classList.toggle("show");
             }
-            function Drop6() {
-                document.getElementById("myDropdown6").classList.toggle("show");
+			function Drop6() {
+			document.getElementById("myDropdown5").classList.toggle("show");
             }
-            function Drop7() {
-                document.getElementById("myDropdown7").classList.toggle("show");
+			function Drop7() {
+			document.getElementById("myDropdown6").classList.toggle("show");
             }
-            function Drop8() {
-                document.getElementById("myDropdown8").classList.toggle("show");
+			function Drop8() {
+			document.getElementById("myDropdown7").classList.toggle("show");
             }
 
             // Close the dropdown menu if the user clicks outside of it
-            window.onclick = function (event) {
-                if (!event.target.matches('.dropbtn')) {
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
 
-                    var dropdowns = document.getElementsByClassName("dropdown-content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                        }
-                    }
-                }
-            }</script>
-        <script>
-            function add() {
-                aBasket.append(document.getElementById("iimg").value, document.getElementById("idesc").value,
-                        document.getElementById("iquant").value, document.getElementById("iprice").value);
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
             }
-        </script>
-        <script src="basket.js"></script>
+            }
+            }
+            }</script>
     </head>
 
     <body>
@@ -109,6 +102,7 @@
                                 <a href="fish.html">Fish & Seafood</a>
                                 <a href="cookedmeat.html">Cooked Meats & Sandwich Fillers</a>
                                 <a href="slicedcookedmeat.html">Sliced Cooked Meat</a>
+                                <a href="pies.html">Pies</a>
                                 <a href="readymeals.html">Ready Meals</a>
                             </div></div></li>
                     <li><div class="dropdown">
@@ -214,93 +208,57 @@
 
                 <div id="intro1">
 
-                    <h2>Yoghurts</h2>
-                    <p>FCEPH ........</p>
+                    <h2>Pets</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur arcu eget est ornare, at commodo purus blandit. 
+                        Ut magna risus, ultricies sed ex in, aliquet iaculis lectus. In non maximus ligula, sit amet tincidunt elit. </p>
                     <ul class="breadcrumb">
                         <li><a href="groceries.html">Groceries</a></li>
-                        <li><a href="freshfood.html">Fresh Foods</a></li>
-                        <li>Yoghurts</li>
+                        <li>Pets</li>
+
                     </ul>
                 </div><!--End of intro-->
                 <div id="main">
-                    <div id="filter" style="float:left">
-                        <form>
-                            <h3>Filter</h3>
-                            <label>Sort By: </label>
-                            <select name="searchdropdown">
-                                <option value="1"> Price - Low to High</option>
-                                <option value="2"> Price - High to Low</option>
-                                <option value="3"> Product Name - A - Z</option>
-                                <option value="4"> Product Name - Z - A</option>
-                                <option value="5"> Top Seller</option>
-                            </select>
-                        </form>
-                        <div id="filterb"><label>Department</label></div>
-                        <ul>
-                            <a href="fruit.html"><li id="list">
-                                    <h4>Apple</h4>
+                    <div id="Catagorys" style="float:left" width="300">
+                        <ul >
+                            <a href="cat.html"><li id="list">
+                                    <h4>Cat & Kitten Food, Treats & Accessories</h4>
                                 </li></a>
-                            <a href="fruit.html"><li id="list">
-                                    <h4>Pear</h4>
+                            <a href="dog.html"><li id="list">
+                                    <h4>Dog & Puppy Food, Treats & Accessories</h4>
                                 </li></a>
-                            <a href="fruit.html"><li id="list">
-                                    <h4>Banana</h4>
-                                </li></a>
-                            <a href="fruit.html"><li id="list">
-                                    <h4>Strawberry</h4>
-                                </li></a>
-                            <a href="fruit.html"><li id="list">
-                                    <h4>Pineapple</h4>
+                            <a href="animal.html"><li id="list">
+                                    <h4>Small Animal, Fish & Bird</h4>
                                 </li></a>
                         </ul>
                     </div>
-                    <div id="Product" >
-                        <ul class="gridView">
-                            <li class="gridItem">
-                                <a href="item.html" style="text-decoration:none" style="color:#000"><img id="iimg" src="images/item1.png" width="175" height="150" alt="item"/>
-                                    <div id="productContent">
-                                        <p id="idesc" style="color:#000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <h3 id="iprice"></h3></a>
-                                <input id="iquant" type="text" value="1" name="quantity"/>
-                                <button type="submit" onClick="add()">Add</button>
-                                </div>
-                            </li>
-                            <li class="gridItem">
-                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/item1.png" width="175" height="150" alt="item"/>
-                                    <div id="productContent">
-                                        <p style="color:#000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <h3></h3></a>
-                                <input type="text" value="1" name="quantity"/>
-                                <button type="submit">Add</button>
-                                </div>
-                            </li>
-                            <li class="gridItem">
-                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/item1.png" width="175" height="150" alt="item"/>
-                                    <div id="productContent">
-                                        <p style="color:#000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <h3></h3></a>
-                                <input type="text" value="1" name="quantity"/>
-                                <button type="submit">Add</button>
-                                </div>
-                            </li>
-                            <li class="gridItem">
-                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/item1.png" width="175" height="150" alt="item"/>
-                                    <div id="productContent">
-                                        <p style="color:#000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <h3></h3></a>
-                                <input type="text" value="1" name="quantity"/>
-                                <button type="submit">Add</button>
-                                </div>
-                            </li> 
-                        </ul>
+                    <div id="Info" style="float:right">
+                        <div class="responsive">
+                            <div class="img">
+                                <a target="_blank" href="#">
+                                    <img src="f.jpg" alt="m" width="800" height="400">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div><br/>
+                        <div class="responsive">
+                            <div class="img">
+                                <a target="_blank" href="#">
+                                    <img src="f.jpg" alt="m" width="400" height="200">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div>
+                        <div class="responsive">
+                            <div class="img">
+                                <a target="_blank" href="#">
+                                    <img src="f.jpg" alt="m" width="400" height="200">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div>
+
                     </div>
 
-                </div>
-                <div class="center1">
-                    <div class="pagination" >
-                        <a href="#">&laquo;</a>
-                        <a class="active1" href="#">1</a>
-                        <a href="#">&raquo;</a></div>
                 </div>
             </div><!--End of content-->
             <footer>
