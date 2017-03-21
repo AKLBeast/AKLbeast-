@@ -2,31 +2,31 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Groceries | FCEPH</title>
+        <title>Food Cupboard | FCEPH</title>
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <script> function Drop1() {
             document.getElementById("myDropdown").classList.toggle("show");
             }
 			function Drop2() {
-			document.getElementById("myDropdown2").classList.toggle("show");
+			document.getElementById("myDropdown1").classList.toggle("show");
             }
 			function Drop3() {
-			document.getElementById("myDropdown3").classList.toggle("show");
+			document.getElementById("myDropdown2").classList.toggle("show");
             }
 			function Drop4() {
-			document.getElementById("myDropdown4").classList.toggle("show");
+			document.getElementById("myDropdown3").classList.toggle("show");
             }
 			function Drop5() {
-			document.getElementById("myDropdown5").classList.toggle("show");
+			document.getElementById("myDropdown4").classList.toggle("show");
             }
 			function Drop6() {
-			document.getElementById("myDropdown6").classList.toggle("show");
+			document.getElementById("myDropdown5").classList.toggle("show");
             }
 			function Drop7() {
-			document.getElementById("myDropdown7").classList.toggle("show");
+			document.getElementById("myDropdown6").classList.toggle("show");
             }
 			function Drop8() {
-			document.getElementById("myDropdown8").classList.toggle("show");
+			document.getElementById("myDropdown7").classList.toggle("show");
             }
 
             // Close the dropdown menu if the user clicks outside of it
@@ -49,7 +49,7 @@
         <div class="utility">
             <div class="utility_wrapper">
                 <ul class="utility_nav1">
-                    <li class="utility_option"><a href="map.html" class="utility_option_link"><img src="images/placeholder.png" width="20" height="21" alt="Locator" /><span>    Store Locator</span></a></li>
+                    <li class="utility_option"><a data-ltc="header-contact" href="contact.html" class="utility_option_link"><img src="images/placeholder.png" width="20" height="21" alt="Locator" /><span>    Store Locator</span></a></li>
                 </ul>
                 <ul class="utility_nav2">
                     <li class="utility_option"><div id="search1">
@@ -58,8 +58,8 @@
                                 <li><div id="img1"><a href="#"><img src="images/search.png" width="20" height="20" alt="Search" /></a></div></li>
                             </ul>
                         </div><!--End of search--></li>
-                    <li class="utility_option"><a href="account.html" class="utility_option_link"><img src="images/account.png" width="20" height="21" alt="Account" /><span>    Your Account</span></a></li>
-                    <li class="utility_option"><a href="basket.html" class="utility_option_link"><img src="images/basket.png" width="20" height="21" alt="Basket" /><span>    Your Basket</span></a></li>
+                    <li class="utility_option"><a data-ltc="header-contact" href="contact.html" class="utility_option_link"><img src="images/account.png" width="20" height="21" alt="Account" /><span>    Your Account</span></a></li>
+                    <li class="utility_option"><a data-ltc="header-help" href="help.html" class="utility_option_link"><img src="images/basket.png" width="20" height="21" alt="Basket" /><span>    Your Basket</span></a></li>
                 </ul>
             </div>
         </div>
@@ -102,11 +102,12 @@
                                 <a href="fish.html">Fish & Seafood</a>
                                 <a href="cookedmeat.html">Cooked Meats & Sandwich Fillers</a>
                                 <a href="slicedcookedmeat.html">Sliced Cooked Meat</a>
+                                <a href="pies.html">Pies</a>
                                 <a href="readymeals.html">Ready Meals</a>
                             </div></div></li>
                     <li><div class="dropdown">
                             <a onclick="Drop2()" class="dropbtn">Bakery</a>
-                            <div id="myDropdown2" class="dropdown-content">
+                            <div id="myDropdown1" class="dropdown-content">
                                 <a href="bakery.html">All Bakery</a>
                                 <a href="bread.html">Bread & Rolls</a>
 								<a href="wraps.html">Wraps, Naan & Pittas</a>
@@ -147,7 +148,7 @@
 							</div></div></li>
                     <li><div class="dropdown">
                             <a onclick="Drop5()" class="dropbtn">Drinks</a>
-                            <div id="myDropdown5" class="dropdown-content">
+                            <div id="myDropdown4" class="dropdown-content">
                                 <a href="drinks.html">All Drinks</a>
                                 <a href="fizzy.html">Fizzy Drinks</a>
 								<a href="juice.html">Juice & Smoothies</a>
@@ -163,7 +164,7 @@
 							</div></div></li>
                     <li><div class="dropdown">
                             <a onclick="Drop6()" class="dropbtn">Household</a>
-                            <div id="myDropdown6" class="dropdown-content">
+                            <div id="myDropdown5" class="dropdown-content">
                                 <a href="ghousehold.html">All Household</a>
                                 <a href="laundry.html">Laundry</a>
                                 <a href="toiletr.html">Toilet Roll</a>
@@ -178,7 +179,7 @@
                             </div></div></li>
                     <li><div class="dropdown">
                             <a onclick="Drop7()" class="dropbtn">Baby</a>
-                            <div id="myDropdown7" class="dropdown-content">
+                            <div id="myDropdown6" class="dropdown-content">
                                 <a href="baby.html">All Baby</a>
                                 <a href="nappies.html">Nappies & Pants</a>
                                 <a href="bwipes.html">Baby & Toddler Wipes</a>
@@ -193,7 +194,7 @@
                             </div></div></li>
                     <li><div class="dropdown">
                             <a onclick="Drop8()" class="dropbtn">Pets</a>
-                            <div id="myDropdown8" class="dropdown-content">
+                            <div id="myDropdown7" class="dropdown-content">
                                 <a href="pets.html">All Pets</a>
                                 <a href="cat.html">Cat & Kitten Food, Treats & Accessories</a>
                                 <a href="dog.html">Dog & Puppy Food, Treats & Accessories</a>
@@ -207,35 +208,78 @@
 
                 <div id="intro1">
 
-                    <h2>Groceries</h2>
+                    <h2>Food Cupboard</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur arcu eget est ornare, at commodo purus blandit. 
                         Ut magna risus, ultricies sed ex in, aliquet iaculis lectus. In non maximus ligula, sit amet tincidunt elit. </p>
+                    <ul class="breadcrumb">
+                        <li><a href="groceries.html">Groceries</a></li>
+                        <li>Food Cupboard</li>
+
+                    </ul>
                 </div><!--End of intro-->
                 <div id="main">
-                    <div class="responsive">
-                        <div class="img">
-                            <a target="_blank" href="#">
-                                <img src="f.jpg" alt="m" width="800" height="400">
-                            </a>
-                            <div class="desc">Add a description of the image here</div>
-                        </div>
+                    <div id="Catagorys" style="float:left" width="300">
+                        <ul >
+                            <a href="tins.html"><li id="list">
+                                    <h4>Tins, Cans & Packets</h4>
+                                </li></a>
+                            <a href="biscuits.html"><li id="list">
+                                    <h4>Biscuits</h4>
+                                </li></a>
+                            <a href="crisps.html"><li id="list">
+                                    <h4>Crisps, Snacks & Nuts</h4>
+                                </li></a>
+                            <a href="chocolate.html"><li id="list">
+                                    <h4>Chocolate</h4>
+                                </li></a>
+                            <a href="sweets.html"><li id="list">
+                                    <h4>Sweets, Mints & Chewing Gum</h4>
+                                </li></a>
+                            <a href="cereal.html"><li id="list">
+                                    <h4>Cereal</h4>
+                                </li></a>
+                            <a href="cooking.html"><li id="list">
+                                    <h4>Cooking Ingredients</h4>
+                                </li></a>
+							<a href="pasta.html"><li id="list">
+                                    <h4>Spaghetti, Pasta, Rice & Noodles</h4>
+                                </li></a>
+							<a href="baking.html"><li id="list">
+                                    <h4>Home Baking</h4>
+                                </li></a>
+							<a href="jam.html"><li id="list">
+                                    <h4>Jams & Spreads</h4>
+                                </li></a>
+                        </ul>
                     </div>
-                    <div class="responsive" style="float:right" style="margin-top:-10px">
-                        <div class="img">
-                            <a target="_blank" href="#">
-                                <img src="f.jpg" alt="m" width="300" height="200">
-                            </a>
-                            <div class="desc">Add a description of the image here</div>
+                    <div id="Info" style="float:right">
+                        <div class="responsive">
+                            <div class="img">
+                                <a target="_blank" href="#">
+                                    <img src="f.jpg" alt="m" width="800" height="400">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div><br/>
+                        <div class="responsive">
+                            <div class="img">
+                                <a target="_blank" href="#">
+                                    <img src="f.jpg" alt="m" width="400" height="200">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="responsive" style="float:right">
-                        <div class="img">
-                            <a target="_blank" href="#">
-                                <img src="f.jpg" alt="m" width="300" height="200">
-                            </a>
-                            <div class="desc">Add a description of the image here</div>
+                        <div class="responsive">
+                            <div class="img">
+                                <a target="_blank" href="#">
+                                    <img src="f.jpg" alt="m" width="400" height="200">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
                         </div>
+
                     </div>
+
                 </div>
             </div><!--End of content-->
             <footer>
@@ -252,11 +296,11 @@
                 </ul>
 
             </footer><!--End of footer-->
-            <div id="copy" style="padding-top:15px; float:left; padding-left:15px">&copyFCEHP 2017 All Rights Reserved</div>
-            <div id="find">Follow us: <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a>
-                <a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a> 
-                <a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a> 
-                <a href="https://youtube.com/"><img src="images/youtube.png" width="20" height="21" alt="Youtube" /></a></div>
+<div id="copy" style="padding-top:15px; float:left; padding-left:15px">&copyFCEHP 2017 All Rights Reserved</div>
+	<div id="find">Follow us: <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a>
+	<a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a> 
+	<a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a> 
+	<a href="https://youtube.com/"><img src="images/youtube.png" width="20" height="21" alt="Youtube" /></a></div>
         </div> <!--End of wrapper-->
     </body>
 </html>

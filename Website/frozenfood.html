@@ -2,54 +2,47 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Milk, Eggs, Cheese & Butter | FCEPH</title>
+        <title>Frozen Food | FCEPH</title>
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <script> function Drop1() {
-                document.getElementById("myDropdown").classList.toggle("show");
+            document.getElementById("myDropdown").classList.toggle("show");
             }
-            function Drop2() {
-                document.getElementById("myDropdown2").classList.toggle("show");
+			function Drop2() {
+			document.getElementById("myDropdown1").classList.toggle("show");
             }
-            function Drop3() {
-                document.getElementById("myDropdown3").classList.toggle("show");
+			function Drop3() {
+			document.getElementById("myDropdown2").classList.toggle("show");
             }
-            function Drop4() {
-                document.getElementById("myDropdown4").classList.toggle("show");
+			function Drop4() {
+			document.getElementById("myDropdown3").classList.toggle("show");
             }
-            function Drop5() {
-                document.getElementById("myDropdown5").classList.toggle("show");
+			function Drop5() {
+			document.getElementById("myDropdown4").classList.toggle("show");
             }
-            function Drop6() {
-                document.getElementById("myDropdown6").classList.toggle("show");
+			function Drop6() {
+			document.getElementById("myDropdown5").classList.toggle("show");
             }
-            function Drop7() {
-                document.getElementById("myDropdown7").classList.toggle("show");
+			function Drop7() {
+			document.getElementById("myDropdown6").classList.toggle("show");
             }
-            function Drop8() {
-                document.getElementById("myDropdown8").classList.toggle("show");
+			function Drop8() {
+			document.getElementById("myDropdown7").classList.toggle("show");
             }
 
             // Close the dropdown menu if the user clicks outside of it
-            window.onclick = function (event) {
-                if (!event.target.matches('.dropbtn')) {
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
 
-                    var dropdowns = document.getElementsByClassName("dropdown-content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                        }
-                    }
-                }
-            }</script>
-        <script>
-            function add() {
-                aBasket.append(document.getElementById("iimg").value, document.getElementById("idesc").value,
-                        document.getElementById("iquant").value, document.getElementById("iprice").value);
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
             }
-        </script>
-        <script src="basket.js"></script>
+            }
+            }
+            }</script>
     </head>
 
     <body>
@@ -215,139 +208,72 @@
 
                 <div id="intro1">
 
-                    <h2>Milk, Eggs, Cheese & Butter</h2>
-                    <p>FCEPH ........</p>
+                    <h2>Frozen Food</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur arcu eget est ornare, at commodo purus blandit. 
+                        Ut magna risus, ultricies sed ex in, aliquet iaculis lectus. In non maximus ligula, sit amet tincidunt elit. </p>
                     <ul class="breadcrumb">
                         <li><a href="groceries.html">Groceries</a></li>
-                        <li><a href="freshfood.html">Fresh Foods</a></li>
-                        <li>Milk, Eggs, Cheese & Butter</li>
+                        <li>Frozen Food</li>
+
                     </ul>
                 </div><!--End of intro-->
                 <div id="main">
-                    <div id="filter" style="float:left">
-                        <form>
-                            <h3>Filter</h3>
-                            <label>Sort By: </label>
-                            <select name="searchdropdown">
-                                <option value="1"> Price - Low to High</option>
-                                <option value="2"> Price - High to Low</option>
-                                <option value="3"> Product Name - A - Z</option>
-                                <option value="4"> Product Name - Z - A</option>
-                                <option value="5"> Top Seller</option>
-                            </select>
-                        </form>
-                        <div id="filterb"><label>Department</label></div>
-                        <ul>
-                            <a href="fruit.html"><li id="list">
-                                    <h4>Apple</h4>
+                    <div id="Catagorys" style="float:left" width="300">
+                        <ul >
+                            <a href="fmeat.html"><li id="list">
+                                    <h4>Frozen Meat & Poultry</h4>
                                 </li></a>
-                            <a href="fruit.html"><li id="list">
-                                    <h4>Pear</h4>
+                            <a href="ffish.html"><li id="list">
+                                    <h4>Frozen Fish & Seafood</h4>
                                 </li></a>
-                            <a href="fruit.html"><li id="list">
-                                    <h4>Banana</h4>
+                            <a href="ice.html"><li id="list">
+                                    <h4>Ice Cream, Ice Lollies & Frozen Yoghurt</h4>
                                 </li></a>
-                            <a href="fruit.html"><li id="list">
-                                    <h4>Strawberry</h4>
+                            <a href="fdesserts.html"><li id="list">
+                                    <h4>Frozen Desserts</h4>
                                 </li></a>
-                            <a href="fruit.html"><li id="list">
-                                    <h4>Pineapple</h4>
+                            <a href="fpizza.html"><li id="list">
+                                    <h4>Frozen Pizza</h4>
+                                </li></a>
+                            <a href="fchips.html"><li id="list">
+                                    <h4>Frozen Chips & Potatoes</h4>
+                                </li></a>
+                            <a href="fpudding.html"><li id="list">
+                                    <h4>Frozen Puddings</h4>
+                                </li></a>
+                            <a href="fpies.html"><li id="list">
+                                    <h4>Frozen Pies</h4>
                                 </li></a>
                         </ul>
                     </div>
-                    <div id="Product" >
-                        <ul class="gridView">
-                            <li class="gridItem">
-                                <a href="item.html" style="text-decoration:none" style="color:#000"><img id="iimg" src="images/item1.png" width="175" height="150" alt="item"/>
-                                    <div id="productContent">
-                                        <p id="idesc" style="color:#000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <h3 id="iprice"></h3></a>
-                                <input id="iquant" type="text" value="1" name="quantity"/>
-                                <button type="submit" onClick="add()">Add</button>
-                                </div>
-                            </li>
-                            <li class="gridItem">
-                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/item1.png" width="175" height="150" alt="item"/>
-                                    <div id="productContent">
-                                        <p style="color:#000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <h3></h3></a>
-                                <input type="text" value="1" name="quantity"/>
-                                <button type="submit">Add</button>
-                                </div>
-                            </li>
-                            <li class="gridItem">
-                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/item1.png" width="175" height="150" alt="item"/>
-                                    <div id="productContent">
-                                        <p style="color:#000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <h3></h3></a>
-                                <input type="text" value="1" name="quantity"/>
-                                <button type="submit">Add</button>
-                                </div>
-                            </li>
-                            <li class="gridItem">
-                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/item1.png" width="175" height="150" alt="item"/>
-                                    <div id="productContent">
-                                        <p style="color:#000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <h3></h3></a>
-                                <input type="text" value="1" name="quantity"/>
-                                <button type="submit">Add</button>
-                                </div>
-                            </li>
-                            <li class="gridItem">
-                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/item1.png" width="175" height="150" alt="item"/>
-                                    <div id="productContent">
-                                        <p style="color:#000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <h3></h3></a>
-                                <input type="text" value="1" name="quantity"/>
-                                <button type="submit">Add</button>
-                                </div>
-                            </li>
-                            <li class="gridItem">
-                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/item1.png" width="175" height="150" alt="item"/>
-                                    <div id="productContent">
-                                        <p style="color:#000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <h3></h3></a>
-                                <input type="text" value="1" name="quantity"/>
-                                <button type="submit">Add</button>
-                                </div>
-                            </li>
-                            <li class="gridItem">
-                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/item1.png" width="175" height="150" alt="item"/>
-                                    <div id="productContent">
-                                        <p style="color:#000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <h3></h3></a>
-                                <input type="text" value="1" name="quantity"/>
-                                <button type="submit">Add</button>
-                                </div>
-                            </li>
-                            <li class="gridItem">
-                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/item1.png" width="175" height="150" alt="item"/>
-                                    <div id="productContent">
-                                        <p style="color:#000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <h3></h3></a>
-                                <input type="text" value="1" name="quantity"/>
-                                <button type="submit">Add</button>
-                                </div>
-                            </li>
-                            <li class="gridItem">
-                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/item1.png" width="175" height="150" alt="item"/>
-                                    <div id="productContent">
-                                        <p style="color:#000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                        <h3></h3></a>
-                                <input type="text" value="1" name="quantity"/>
-                                <button type="submit">Add</button>
-                                </div>
-                            </li> 
-                        </ul>
+                    <div id="Info" style="float:right">
+                        <div class="responsive">
+                            <div class="img">
+                                <a target="_blank" href="#">
+                                    <img src="f.jpg" alt="m" width="800" height="400">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div><br/>
+                        <div class="responsive">
+                            <div class="img">
+                                <a target="_blank" href="#">
+                                    <img src="f.jpg" alt="m" width="400" height="200">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div>
+                        <div class="responsive">
+                            <div class="img">
+                                <a target="_blank" href="#">
+                                    <img src="f.jpg" alt="m" width="400" height="200">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div>
+
                     </div>
 
-                </div>
-                <div class="center1">
-                    <div class="pagination" >
-                        <a href="#">&laquo;</a>
-                        <a class="active1" href="#">1</a>
-						<a href="#">2</a>
-                        <a href="#">&raquo;</a></div>
                 </div>
             </div><!--End of content-->
             <footer>
@@ -364,11 +290,11 @@
                 </ul>
 
             </footer><!--End of footer-->
-            <div id="copy" style="padding-top:15px; float:left; padding-left:15px">&copyFCEHP 2017 All Rights Reserved</div>
-            <div id="find">Follow us: <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a>
-                <a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a> 
-                <a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a> 
-                <a href="https://youtube.com/"><img src="images/youtube.png" width="20" height="21" alt="Youtube" /></a></div>
+<div id="copy" style="padding-top:15px; float:left; padding-left:15px">&copyFCEHP 2017 All Rights Reserved</div>
+	<div id="find">Follow us: <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a>
+	<a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a> 
+	<a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a> 
+	<a href="https://youtube.com/"><img src="images/youtube.png" width="20" height="21" alt="Youtube" /></a></div>
         </div> <!--End of wrapper-->
     </body>
 </html>
