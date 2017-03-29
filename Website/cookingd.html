@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Home & Furniture | FCEPH</title>
+        <title>Cooking & Dining | FCEPH</title>
         <link href="css/style.css" rel="stylesheet" type="text/css" />
         <script> function Drop1() {
             document.getElementById("myDropdown").classList.toggle("show");
@@ -46,14 +46,22 @@
         <div class="utility">
             <div class="utility_wrapper">
                 <ul class="utility_nav1">
-                    <li class="utility_option"><a href="map.html" class="utility_option_link"><img src="images/placeholder.png" width="20" height="21" alt="Locator" /><span>    Store Locator</span></a></li>
+                    <li class="utility_option"><a href="contact.html" class="utility_option_link"><img src="images/placeholder.png" width="20" height="21" alt="Locator" /><span>    Store Locator</span></a></li>
                 </ul>
                 <ul class="utility_nav2">
                     <li class="utility_option"><div id="search1">
                             <ul>
-                                <li><input id="to" type="text" name="to" placeholder="Search Products"></input></li>
+                                <li><input id="to" type="text" name="to" placeholder="Search Products" onclick="myFunction()" onkeyup="filterFunction()"></input></li>
                                 <li><div id="img1"><a href="#"><img src="images/search.png" width="20" height="20" alt="Search" /></a></div></li>
-                            </ul>
+								<div id="dr" class="droo"><a href="#">Apples</a>
+											<a href="#">Base</a>
+											<a href="#">Coleslaw</a>
+											<a href="#">Contact</a>
+											<a href="#">Custom</a>
+											<a href="#">Support</a>
+											<a href="#">Tools</a>
+  </div>
+							</ul>
                         </div><!--End of search--></li>
                     <li class="utility_option"><a href="account.html" class="utility_option_link"><img src="images/account.png" width="20" height="21" alt="Account" /><span>    Your Account</span></a></li>
                     <li class="utility_option"><a href="basket.html" class="utility_option_link"><img src="images/basket.png" width="20" height="21" alt="Basket" /><span>    Your Basket</span></a></li>
@@ -155,36 +163,89 @@
 
                 <div id="intro1">
 
-                    <h2>Home & Furniture</h2>
+                    <h2>Cooking & Dining</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur arcu eget est ornare, at commodo purus blandit. 
                         Ut magna risus, ultricies sed ex in, aliquet iaculis lectus. In non maximus ligula, sit amet tincidunt elit. </p>
+                    <ul class="breadcrumb">
+                        <li><a href="household.html">Home & Furniture</a></li>
+                        <li>Cooking & Dining</li>
+
+                    </ul>
                 </div><!--End of intro-->
                 <div id="main">
-                    <div class="responsive">
-                        <div class="img">
-                            <a target="_blank" href="#">
-                                <img src="f.jpg" alt="m" width="800" height="400">
-                            </a>
-                            <div class="desc">Add a description of the image here</div>
-                        </div>
+                    <div id="Catagorys" style="float:left" width="300">
+                        <ul >
+                            <a href="hbaking.html"><li id="list">
+                                    <h4>Baking</h4>
+                                </li></a>
+                            <a href="utensil.html"><li id="list">
+                                    <h4>Kitchen Utensils</h4>
+                                </li></a>
+								<a href="cutlery.html"><li id="list">
+                                    <h4>Cutlery</h4>
+                                </li></a>
+                            <a href="glass.html"><li id="list">
+                                    <h4>Glassware</h4>
+                                </li></a>
+                            <a href="pots.html"><li id="list">
+                                    <h4>Pots & Pans</h4>
+                                </li></a>
+                            <a href="bins.html"><li id="list">
+                                    <h4>Kitchen Bins</h4>
+                                </li></a>
+								<a href="tableware.html"><li id="list">
+                                    <h4>Tableware</h4>
+                                </li></a>
+                        </ul>
                     </div>
-                    <div class="responsive" style="float:right" style="margin-top:-10px">
-                        <div class="img">
-                            <a target="_blank" href="#">
-                                <img src="f.jpg" alt="m" width="300" height="200">
-                            </a>
-                            <div class="desc">Add a description of the image here</div>
+                    <div id="Info" style="float:right">
+                        <div class="responsive">
+                            <div class="img">
+                                <a target="_blank" href="#">
+                                    <img src="f.jpg" alt="m" width="800" height="400">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
+                        </div><br/>
+                        <div class="responsive">
+                            <div class="img">
+                                <a target="_blank" href="#">
+                                    <img src="f.jpg" alt="m" width="400" height="200">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="responsive" style="float:right">
-                        <div class="img">
-                            <a target="_blank" href="#">
-                                <img src="f.jpg" alt="m" width="300" height="200">
-                            </a>
-                            <div class="desc">Add a description of the image here</div>
+                        <div class="responsive">
+                            <div class="img">
+                                <a target="_blank" href="#">
+                                    <img src="f.jpg" alt="m" width="400" height="200">
+                                </a>
+                                <div class="desc">Add a description of the image here</div>
+                            </div>
                         </div>
+
                     </div>
+
                 </div>
+				<script>
+function myFunction() {
+    document.getElementById("dr").classList.toggle("show");
+}
+				function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("to");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("dr");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
             </div><!--End of content-->
             <footer>
 
@@ -200,11 +261,11 @@
                 </ul>
 
             </footer><!--End of footer-->
-            <div id="copy" style="padding-top:15px; float:left; padding-left:15px">&copyFCEHP 2017 All Rights Reserved</div>
-            <div id="find">Follow us: <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a>
-                <a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a> 
-                <a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a> 
-                <a href="https://youtube.com/"><img src="images/youtube.png" width="20" height="21" alt="Youtube" /></a></div>
+<div id="copy" style="padding-top:15px; float:left; padding-left:15px">&copyFCEHP 2017 All Rights Reserved</div>
+	<div id="find">Follow us: <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a>
+	<a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a> 
+	<a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a> 
+	<a href="https://youtube.com/"><img src="images/youtube.png" width="20" height="21" alt="Youtube" /></a></div>
         </div> <!--End of wrapper-->
     </body>
 </html>
