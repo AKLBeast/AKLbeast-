@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<body>
+
+<h1>Payment Details</h1>
+<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+
+
+
+<script src="components/webcomponentsjs/webcomponents-lite.js"></script>
+<link rel="import" href="components/paper-input/paper-input.html">
+<link rel="import" href="components/iron-icons/iron-icons/iron-icons.html">
+<link rel ="import" href="components/paper-input-container/paper-input-container.html">
+<link rel ="import" href="components/input/input.html">     
+<link rel="import" href="components/ssn-input/ssn-input.html">
+<link rel="import" href="components/paper-input-error/paper-input-error.html">
+<link rel="import" href="components/label/label.html">
+<link rel="import" href="components/paper-input-container/paper-input-container.html">
+<link rel="import" href="components/ssn-validator/ssn-validator.html">
+<style>
+  paper-input {
+    max-width: 400px;
+    margin: auto;
+  }
+  iron-icon, div[suffix] {
+    color: hsl(0, 0%, 50%);
+    margin-right: 12px;
+  }
+</style>
+<paper-input always-float-label label="Name"></paper-input>
+<paper-input label="Card Number">
+</paper-input>
+    <paper-input label="Issue Date">
+    </paper-input>
+<paper-input label="Expiry Date">
+    </paper-input>
+<paper-input label="Security Number">
+    </paper-input>
+<paper-input label="Address">
+    </paper-input>
+<paper-input label="Password">
+    </paper-input>
+
+  <iron-icon icon="issue date" prefix></iron-icon>
+
+</paper-input>
+
+<!--
+<paper-input-container always-float-label auto-validate attr-for-value="value">
+  <label>Social Security Number</label>
+  <ssn-input class="paper-input-input"></ssn-input>
+  <paper-input-error>SSN invalid!</paper-input-error>
+</paper-input-container>
+
+
+
+
+
+
+      
+    
+     
+   
+ 
+    
+
+ 
+  
+   
+    <script>
+    function validate() {
+      document.getElementById('inputForValidation').validate();
+    }
+
+    function clearInput() {
+      document.getElementById('inputWithButton').value = '';
+    }
+  
+    
+
+</script>
+
+
+</body>
+</html>
+
+   
