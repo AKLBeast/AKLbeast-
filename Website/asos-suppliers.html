@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ASOS Suppliers | FCEPH</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+		
+        <script> function Drop1() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            function Drop2() {
+                document.getElementById("myDropdown2").classList.toggle("show");
+            }
+            function Drop3() {
+                document.getElementById("myDropdown3").classList.toggle("show");
+            }
+            function Drop4() {
+                document.getElementById("myDropdown4").classList.toggle("show");
+            }
+            function Drop5() {
+                document.getElementById("myDropdown5").classList.toggle("show");
+            }
+            function Drop6() {
+                document.getElementById("myDropdown6").classList.toggle("show");
+            }
+            function Drop7() {
+                document.getElementById("myDropdown7").classList.toggle("show");
+            }
+            function Drop8() {
+                document.getElementById("myDropdown8").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }</script>
+        <script>
+            function add() {
+                aBasket.append(document.getElementById("iimg").value, document.getElementById("idesc").value,
+                        document.getElementById("iquant").value, document.getElementById("iprice").value);
+            }
+        </script>
+        <script src="basket.js"></script>
+    </head>
+
+    <body>
+        <div class="utility">
+            <div class="utility_wrapper">
+                <ul class="utility_nav1">
+                    <li class="utility_option"><a href="map.html" class="utility_option_link"><img src="images/placeholder.png" width="20" height="21" alt="Locator" /><span>    Store Locator</span></a></li>
+                </ul>
+                <ul class="utility_nav2">
+                    <li class="utility_option"><div id="search1">
+                            <ul>
+                                <li><input id="to" type="text" name="to" placeholder="Search Products"></input></li>
+                                <li><div id="img1"><a href="#"><img src="images/search.png" width="20" height="20" alt="Search" /></a></div></li>
+                            </ul>
+                        </div><!--End of search--></li>
+                    <li class="utility_option"><a href="account.html" class="utility_option_link"><img src="images/account.png" width="20" height="21" alt="Account" /><span>    Your Account</span></a></li>
+                    <li class="utility_option"><a href="basket.html" class="utility_option_link"><img src="images/basket.png" width="20" height="21" alt="Basket" /><span>    Your Basket</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="wrapper">
+            <header>
+                <ul>
+                    <a href="index.html"><img src="images/logo.png" width="227" height="99" alt="logo" /></a>
+                </ul>
+
+            </header>
+
+            <nav>
+                <ul>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a  href="groceries.html">Groceries</a></li>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a href="clothing.html">Clothing</a></li>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a href="electronics.html">Electronics</a></li>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a href="pharmacy.html">Pharmacy</a></li>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a href="household.html">Home & Furniture</a></li>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a href="clubcard.html">Clubcard</a></li>
+                    <li class="active" style="margine-left: 10px; margin-right:10px;"><a href="supplier.html">Suppliers</a></li>
+                </ul>
+            </nav><!--End of navigation-->
+            <div id="subnav">
+
+                <ul>
+
+                    <li><div class="dropdown">
+                            <a onclick="Drop1()" class="dropbtn">Groceries</a>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="ocado-supplier.html">Ocado</a>
+                            </div></div></li>
+                    <li><div class="dropdown">
+                            <a onclick="Drop2()" class="dropbtn">Clothing</a>
+                            <div id="myDropdown1" class="dropdown-content">
+                                <a href="asos-suppliers.html">ASOS</a>
+                                
+							</div></div></li>
+                    <li><div class="dropdown">
+                            <a onclick="Drop3()" class="dropbtn">Electronic</a>
+                            <div id="myDropdown3" class="dropdown-content">
+                                <a href="frozenfood.html">All Frozen Food</a>
+								<a href="fmeat.html">Frozen Meat & Poultry</a>
+								<a href="ffish.html">Frozen Fish & Seafood</a>
+                                <a href="ice.html">Ice Cream, Ice Lollies & Frozen Yoghurt</a>
+                                <a href="fdesserts.html">Frozen Desserts</a>
+								<a href="fpizza.html">Frozen Pizza</a>
+								<a href="fchips.html">Frozen Chips & Potatoes</a>
+								<a href="fpudding.html">Frozen Puddings</a>
+								<a href="fpies.html">Frozen Pies</a>
+							</div></div></li>
+                    <li><div class="dropdown">
+                            <a onclick="Drop4()" class="dropbtn">Pharmacy</a>
+                            <div id="myDropdown4" class="dropdown-content">
+                                <a href="foodcupboard.html">All Food Cupboard</a>
+                                <a href="tins.html">Tins, Cans & Packets</a>
+                                <a href="biscuits.html">Biscuits</a>
+                                <a href="crisps.html">Crisps, Snacks & Nuts</a>
+                                <a href="chocolate.html">Chocolate</a>
+                                <a href="sweets.html">Sweets, Mints & Chewing Gum</a>
+                                <a href="cereal.html">Cereal</a>
+                                <a href="cooking.html">Cooking Ingredients</a>
+                                <a href="pasta.html">Spaghetti, Pasta, Rice & Noodles</a>
+                                <a href="baking.html">Home Baking</a>
+                                <a href="jam.html">Jams & Spreads</a>
+							</div></div></li>
+                    <li><div class="dropdown">
+                            <a onclick="Drop5()" class="dropbtn">House & Furniture</a>
+                            <div id="myDropdown4" class="dropdown-content">
+                                <a href="drinks.html">All Drinks</a>
+                                <a href="fizzy.html">Fizzy Drinks</a>
+								<a href="juice.html">Juice & Smoothies</a>
+								<a href="squash.html">Squash</a>
+                                <a href="kdrink.html">Kids</a>
+                                <a href="water.html">Bottled Water</a>
+								<a href="energy.html">Sports & Energy Drinks</a>
+								<a href="milkshake.html">Milkshake</a>
+                                <a href="tea.html">Tea</a>
+                                <a href="coffee.html">Coffee</a>
+                                <a href="wine.html">Wine</a>
+                                <a href="beer.html">Beer & Cider</a>
+							</div></div></li>
+                    
+                </ul>
+
+            </div><!--End of subnavigation-->
+
+            <div id="content">
+
+                <div id="intro1">
+
+                    <h2>Clothing</h2>
+                    <p>FCEPH ........</p>
+                    <ul class="breadcrumb">
+                        <li><a href="supplier.html">Suppliers</a></li>
+                        <li><a href="clothing.html">Clothing</a></li>
+                        <li>Asos</li> 
+                        
+                        <li></li>
+                    </ul>
+                </div><!--End of intro-->
+                <div id="main">
+                    <div id="filter" style="float:left">
+                        <form>
+                            <h3>Filter</h3>
+                            <label>Sort By: </label>
+                            <select name="searchdropdown">
+                                <option value="1"> Price - Low to High</option>
+                                <option value="2"> Price - High to Low</option>
+                                <option value="3"> Product Name - A - Z</option>
+                                <option value="4"> Product Name - Z - A</option>
+                                <option value="5"> Top Seller</option>
+                            </select>
+                        </form>
+                        <div id="filterb"><label>Department</label></div>
+                        <ul>
+                            <a href="asos-suppliers.html"><li id="list">
+                                    <h4>Jackets & Coats</h4>
+                                </li></a>
+                            <a href="asos-suppliers.html"><li id="list">
+                                    <h4>Shoes, Boots & Trainers</h4>
+                                </li></a>
+                            <a href="asos-suppliers.html"><li id="list">
+                                    <h4>Jeans</h4>
+                                </li></a>
+                            <a href="asos-suppliers.html"><li id="list">
+                                    <h4>Shirts</h4>
+                                </li></a>
+                            <a href="asos-suppliers.html"><li id="list">
+                                    <h4>Accessories</h4>
+                                </li></a>
+                        </ul>
+                    </div>
+                    <div id="Product" >
+                        <ul class="gridView">
+                            <li class="gridItem">
+                                <a href="item.html" style="text-decoration:none" style="color:#000"><img id="iimg" src="images/river%20island.png" width="175" height="150" alt="item"/>
+                                    <div id="productContent">
+                                        <p id="idesc" style="color:#000">River Island Slim Jeans In Dark Wash<br>£30.00</p>
+                                        <h3 id="iprice"></h3></a>
+                                <input id="iquant" type="text" value="1" name="quantity"/>
+                                <button type="submit" onClick="add()">Add</button>
+                                </div>
+                            
+                            </li>
+                            <li class="gridItem">
+                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/patched%20denim.png" width="175" height="150" alt="item"/>
+                                    <div id="productContent">
+                                        <p style="color:#000">Religion Patched Denim in Super Skinny Fit With Stretch<br>£60.00<br></p>
+                                        <h3></h3></a>
+                                <input type="text" value="1" name="quantity"/>
+                                <button type="submit">Add</button>
+                                </div>
+                            </li>
+                            <li class="gridItem">
+                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/bomber%20jacket.png" width="175" height="150" alt="item"/>
+                                    <div id="productContent">
+                                        <p style="color:#000">Washed Bomber Jacket With Borg Collar in Khahi<br>£55.00<br></p>
+                                        <h3></h3></a>
+                                <input type="text" value="1" name="quantity"/>
+                                <button type="submit">Add</button>
+                                </div>
+                            </li>
+                            <li class="gridItem">
+                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/Parker%20jacket.png" width="175" height="150" alt="item"/>
+                                    <div id="productContent">
+                                        <p style="color:#000">F.C.E.P.H Parka Jacket <br> £55.00</p>
+                                        <h3></h3></a>
+                                <input type="text" value="1" name="quantity"/>
+                                <button type="submit">Add</button>
+                                </div>
+                            </li>
+                            <li class="gridItem">
+                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/chelsea%20boots.png" width="175" height="150" alt="item"/>
+                                    <div id="productContent">
+                                        <p style="color:#000">F.C.E.P.H Chelsea Boots<br> £35.00</p>
+                                        <h3></h3></a>
+                                <input type="text" value="1" name="quantity"/>
+                                <button type="submit">Add</button>
+                                </div>
+                            </li>
+                            <li class="gridItem">
+                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/Boots.png" width="175" height="150" alt="item"/>
+                                    <div id="productContent">
+                                        <p style="color:#000">D-Struct Brogue Boots<br>£17.50</p>
+                                        <h3></h3></a>
+                                <input type="text" value="1" name="quantity"/>
+                                <button type="submit">Add</button>
+                                </div>
+                            </li>
+                            <li class="gridItem">
+                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/STR%20trainer.png" width="175" height="150" alt="item"/>
+                                    <div id="productContent">
+                                        <p style="color:#000">adidas Originals Tubular Invader STR Trainers in Green BB8391<br> £60.00</p>
+                                        <h3></h3></a>
+                                <input type="text" value="1" name="quantity"/>
+                                <button type="submit">Add</button>
+                                </div>
+                            </li>
+                            <li class="gridItem">
+                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/canvas%20backpack.png" width="175" height="150" alt="item"/>
+                                    <div id="productContent">
+                                        <p style="color:#000">Military Canvas Backpackbr> £22.00</p>
+                                        <h3></h3></a>
+                                <input type="text" value="1" name="quantity"/>
+                                <button type="submit">Add</button>
+                                </div>
+                            </li>
+                            <li class="gridItem">
+                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/basketball%20cap.png" width="175" height="150" alt="item"/>
+                                    <div id="productContent">
+                                        <p style="color:#000">Baseball Cap In Brown <br> £3.50</p>
+                                        <h3></h3></a>
+                                <input type="text" value="1" name="quantity"/>
+                                <button type="submit">Add</button>
+                                </div>
+                            </li>
+                            <li class="gridItem">
+                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/shirt.png" width="175" height="150" alt="item"/>
+                                    <div id="productContent">
+                                        <p style="color:#000">Jack & Jones All Over Print Shirt<br> £28.00</p>
+                                        <h3></h3></a>
+                                <input type="text" value="1" name="quantity"/>
+                                <button type="submit">Add</button>
+                                </div>
+                            </li>
+                            <li class="gridItem">
+                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/asos%20skit.png" width="175" height="150" alt="item"/>
+                                    <div id="productContent">
+                                        <p style="color:#000">Denim Pleated Skirt In Washed Black<br> £14.00</p>
+                                        <h3></h3></a>
+                                <input type="text" value="1" name="quantity"/>
+                                <button type="submit">Add</button>
+                                </div>
+                            </li>
+                            <li class="gridItem">
+                                <a href="item.html" style="text-decoration:none" style="color:#000"><img src="images/skit.png" width="175" height="150" alt="item"/>
+                                    <div id="productContent">
+                                        <p style="color:#000">Ruffle Front Animal Print A Line Mini Skirt<br>£18.00</p>
+                                        <h3></h3></a>
+                                <input type="text" value="1" name="quantity"/>
+                                <button type="submit">Add</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="center1">
+                    <div class="pagination" >
+                        <a href="#">&laquo;</a>
+                        <a class="active1" href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">&raquo;</a></div>
+                </div>
+            </div><!--End of content-->
+            <footer>
+
+                <ul>
+                    <li>
+                        <h4>FCEPH Help & FAQ</h4>
+                        <ul id="sub">
+                            <li><a href="contact.html">Help Centre</a></li>
+                            <li><a href="map.html">Store Locator</a></li>
+                            <li><a href="contact.html#a">Contact Us</a></li>
+                        </ul>
+                    </li>     
+                </ul>
+
+            </footer><!--End of footer-->
+            <div id="copy" style="padding-top:15px; float:left; padding-left:15px">&copyFCEHP 2017 All Rights Reserved</div>
+            <div id="find">Follow us: <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a>
+                <a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a> 
+                <a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a> 
+                <a href="https://youtube.com/"><img src="images/youtube.png" width="20" height="21" alt="Youtube" /></a></div>
+        </div> <!--End of wrapper-->
+    </body>
+</html>
