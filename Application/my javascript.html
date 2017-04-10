@@ -14,7 +14,7 @@ and open the template in the editor.
 <body>
 
 <h1>Payment Details</h1>
-<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+<p>Welecom to FCEPH payment Section.</p>
 
 
 
@@ -28,6 +28,9 @@ and open the template in the editor.
 <link rel="import" href="components/label/label.html">
 <link rel="import" href="components/paper-input-container/paper-input-container.html">
 <link rel="import" href="components/ssn-validator/ssn-validator.html">
+<link rel="import" href="components/paper-button/paper-button.html">
+<link rel="import" href="components/paper-dialog/paper-dialog.html">
+<link rel="import" href="components/paper-dialog-scrollable/paper-dialog-scrollable.html">
 <style>
   paper-input {
     max-width: 400px;
@@ -36,10 +39,62 @@ and open the template in the editor.
   iron-icon, div[suffix] {
     color: hsl(0, 0%, 50%);
     margin-right: 12px;
+   
   }
+  paper-button {
+      
+    height:34px;
+    margin:20 auto;
+    margin-right:30px;
+    position:relative;
+    top:50%; 
+    left:50%;
+}
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+paper-dialog{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    float: left;
+
+    display: block;
+    padding: 8px;
+    background-color: #ddddd
+    display: none;
+   
+    
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+   
+
+    position: relative;
+    display: inline-block;
+}
+
 </style>
-<paper-input always-float-label label="Name"></paper-input>
-<paper-input label="Card Number">
+
+
+
+
+<paper-input label="CardHolder Name"></paper-input>
+<paper-input label="Card Number"> 
 </paper-input>
     <paper-input label="Issue Date">
     </paper-input>
@@ -47,52 +102,28 @@ and open the template in the editor.
     </paper-input>
 <paper-input label="Security Number">
     </paper-input>
-<paper-input label="Address">
-    </paper-input>
-<paper-input label="Password">
-    </paper-input>
-
-  <iron-icon icon="issue date" prefix></iron-icon>
-
-</paper-input>
-
-<!--
-<paper-input-container always-float-label auto-validate attr-for-value="value">
-  <label>Social Security Number</label>
-  <ssn-input class="paper-input-input"></ssn-input>
-  <paper-input-error>SSN invalid!</paper-input-error>
-</paper-input-container>
 
 
 
-
-
-
-      
-    
-     
-   
- 
+<paper-button raised onclick="dialog1.open()">Cancel</paper-button>
+<paper-dialog id="dialog1">
+  <paper-dialog-scrollable>
+      <p>Your payment has been Cancel</p>
+   </paper-dialog-scrollable>
+       <div class="buttons">
+    <paper-button dialog1-dismiss>Close</paper-button>
+  </div>
+</paper-dialog>
     
 
- 
+    <paper-button raised onclick="dialog2.open()">Confirm</paper-button>
+<paper-dialog id="dialog2">
+  <paper-dialog-scrollable>
+      <p>Your payment has been Confirmed</p>
+ <div class="buttons">
+    <paper-button dialog2-dismiss>Close</paper-button>
+  </div>
+</paper-dialog>
   
-   
-    <script>
-    function validate() {
-      document.getElementById('inputForValidation').validate();
-    }
-
-    function clearInput() {
-      document.getElementById('inputWithButton').value = '';
-    }
-  
-    
-
-</script>
-
-
 </body>
 </html>
-
-   
