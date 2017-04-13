@@ -49,12 +49,8 @@ function showSlides(n) {
     <body>
         <div class="utility">
             <div class="utility_wrapper">
-                <ul class="utility_nav1">
-                    <li class="utility_option"><a data-ltc="header-contact" href="contact.html" class="utility_option_link"><img src="images/placeholder.png" width="20" height="21" alt="Locator" /><span>    Store Locator</span></a></li>
-                    <li class="utility_option"><a data-ltc="header-help" href="help.html" class="utility_option_link"><img src="images/help.png" width="20" height="21" alt="Locator" /><span>   Help</span></a></li>
-                </ul>
                 <ul class="utility_nav2">
-                    <li class="utility_option"><a data-ltc="header-sign" href="#" class="utility_option_link" onclick="document.getElementById('id01').style.display='block'"><img src="images/account.png" width="20" height="21" alt="Locator" /><span>    Sign in/Register</span></a></li>
+                    <li class="utility_option"><a href="#" class="utility_option_link" onclick="document.getElementById('id01').style.display='block'"><img src="images/account.png" width="20" height="21" alt="Locator" /><span>    Sign in/Register</span></a></li>
                     <div id="id01" class="modal"> 
                         <form class="modal-content animate" action="account.html">
                             <div class="imgcontainer">
@@ -89,22 +85,6 @@ function showSlides(n) {
                 <ul>
                     <li id="h1"><a href="index.html"><img src="images/logo.png" width="227" height="99" alt="logo" /></a></li>
                     <!--This will be our logo which will be a link to the home page-->
-                    <li id="h2"><div id="search">
-                            <ul>
-                                <li ><div id="searchbar">
-                                        <select name="searchdropdown">
-                                            <option value="1"> Groceries</option>
-                                            <option value="2"> Clothing</option>
-                                            <option value="3"> Electronics</option>
-                                            <option value="4"> Pharmacy</option>
-                                            <option value="5"> Household</option>
-                                        </select>
-                                    </div></li>
-                                <li><input type="text" name="to" placeholder="Search..."></li>
-                                <li><div id="img"><a href="#"><img src="images/search.png" width="30" height="30" alt="Search" /></a></div></li>
-                            </ul>
-
-                        </div></li><!--End of search bar-->
 
                 </ul>
             </header> <!--End of header-->
@@ -118,9 +98,9 @@ function showSlides(n) {
                             <div class="dropdown-content1" style="left:0;">
 
                                 <a href="groceries.html" style="float:left">All Groceries</a>
-								 <a href="#" style="float:right" ><img src="images/recipes1.png" width="600" height="200" alt="Recipes"/></a>
+								 <a href="#" style="float:right" ><img src="images/recipe1.png" width="600" height="200" alt="Recipes"/></a>
                                 <a href="freshfood.html" style="Clear: left">Fresh Food</a>
-                                <a href="#" style="Clear: left">Bakery</a>
+                                <a href="bakery.html" style="Clear: left">Bakery</a>
 								<a href="#" style="Clear: left">Food Cupboard</a>
 								<a href="#" style="Clear: left">Health & Beauty</a>
                                
@@ -175,14 +155,6 @@ function showSlides(n) {
                             </div>
                         </li></div>
                     <div class="drop" style="float:left;"><li><a href="clubcard.html">Clubcard</a>
-                            <div class="dropdown-content1" style="left:0;">
-
-                                <a href="#" style="float:left">Link 1</a>
-								<a href="#"style="float:right" style="Clear: both"><img src="images/recipes1.png" width="600" height="200" alt="Savings"/></a>
-                                <a href="#"style="Clear: left">Link 2</a>
-                                <a href="#"style="Clear: left">Link 3</a>
-                                
-                            </div>
                         </li></div>
 
                 </ul>
@@ -193,41 +165,41 @@ function showSlides(n) {
 
                 </div><!--End of intro-->
                         <div id="content" >
-			<h3>Register</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur arcu eget est ornare, at commodo purus blandit. 
-                Ut magna risus, ultricies sed ex in, aliquet iaculis lectus. In non maximus ligula, sit amet tincidunt elit.</p>
-                    <form action="account.html">
-					<label><b>Title</b></label>
-					<select name="title">
+			<h3 style="color:#91DC5A;">Register</h3>
+                    <form action="clubcard1.html" style="width:550px; background:#fff; margin:auto; border: 2px solid #ccc; border-radius: 5px; padding:15px">
+					<label><b>Title</b></label><br>
+					<select style="width:300px; height:30px; border: 1px solid #ccc;" name="title">
                                             <option value="1"> Please Select</option>
 											<option value="2"> Miss</option>
                                             <option value="3"> Mr</option>
                                             <option value="4"> Mrs</option>
                                             <option value="5"> Ms</option>
-                                        </select>
-					<input type="text" name="fname" required>
-					<label><b>First Name</b></label>
-					<input type="text" name="fname" required>
-					<label><b>Last Name</b></label>
-					<input type="text" name="sname" required>
-					<label><b>Email Address</b></label>
-					<input type="email" name="email" required>
-					<label><b>Password</b></label>
-					<input type="password" name="psw" required>
-					<label><b>Confirm Password</b></label>
-					<input type="password" name="psw" required>
-					<label><b>Postcode</b></label>
-					<input type="text" name="psw" required>
+                                        </select><br>
+					<label><b>First Name</b></label><br>
+					<input style="width:300px; height:30px; border: 1px solid #ccc;" type="text" name="fname" required><br>
+					<label><b>Last Name</b></label><br>
+					<input style="width:300px; height:30px; border: 1px solid #ccc;" type="text" name="sname" required><br>
+					<label><b>Email Address</b></label><br>
+					<input style="width:350px; height:30px; border: 1px solid #ccc;" type="email" name="email" required><br>
+					<label><b>Password</b></label><br>
+					<input style="width:300px; height:30px;" type="password" name="psw" required><br>
+					<label><b>Confirm Password</b></label><br>
+					<input style="width:300px; height:30px; " type="password" name="psw" required><br>
+					<label><b>Postcode</b></label><br>
+					<input style="width:300px; height:30px; border: 1px solid #ccc;" type="text" name="pst" required><br>
 					
 					
-					</form>
-					<div class="reg">
+					<br><br>
+					<div class="reg" style="background:#fff; padding:10px; border: 1px solid #ccc;">
 					<h3>Terms and condition</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consectetur arcu eget est ornare, at commodo purus blandit. 
-                Ut magna risus, ultricies sed ex in, aliquet iaculis lectus. In non maximus ligula, sit amet tincidunt elit.</p>
+                                <p>Welcome to our FCEPH. If you create an account and use this website, 
+								you are agreeing to comply with and be bound by the following terms and conditions of use, 
+								which together with our privacy policy govern FCEPH's relationship with you in relation 
+								to this website. If you disagree with any part of these terms and conditions, please do not use 
+								our website.</p>
                                 <input type="checkbox" > I agree with the terms and conditions
                             </div>
-					<button type="submit">Register</button>
+					<button type="submit">Register</button></form>
             </div><!--End of content-->
             <footer>
 
@@ -235,20 +207,19 @@ function showSlides(n) {
                     <li>
                         <h4>FCEPH Help & FAQ</h4>
                         <ul id="sub">
-                            <li><a href="#top">Help Centre</a></li>
-                            <li><a href="#top">Store Locator</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="#top">Copyright&copy </a></li>
+                            <li><a href="contact.html">Help Centre</a></li>
+                            <li><a href="map.html">Store Locator</a></li>
+                            <li><a href="contact.html#a">Contact Us</a></li>
                         </ul>
                     </li>     
                 </ul>
 
             </footer><!--End of footer-->
-            <div id="find">Follow us: 
-                <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a>
-                <a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a>
-                <a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a>
-                <a href="https://youtube.com/"><img src="images/youtube.png" width="20" height="21" alt="Youtube" /></a></div>
+<div id="copy" style="padding-top:15px; float:left; padding-left:15px">&copyFCEHP 2017 All Rights Reserved</div>
+	<div id="find">Follow us: <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a>
+	<a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a> 
+	<a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a> 
+	<a href="https://youtube.com/"><img src="images/youtube.png" width="20" height="21" alt="Youtube" /></a></div>
             <!--Youtube, Facebook, Twitter and other links-->
         </div> <!--End of wrapper-->
     </body>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Clubcard | FCEPH</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script> function Drop1() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            function Drop2() {
+                document.getElementById("myDropdown2").classList.toggle("show");
+            }
+            function Drop3() {
+                document.getElementById("myDropdown3").classList.toggle("show");
+            }
+            function Drop4() {
+                document.getElementById("myDropdown4").classList.toggle("show");
+            }
+            function Drop5() {
+                document.getElementById("myDropdown5").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function (event) {
+                if (!event.target.matches('.dropbtn')) {
+
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }</script>
+        <style> 
+            h1 {
+                text-align: center;
+                clear:both;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="utility">
+            <div class="utility_wrapper">
+                <ul class="utility_nav2">
+                    <li class="utility_option"><a href="account.html" class="utility_option_link"><img src="images/account.png" width="20" height="21" alt="Account" /><span>    Your Account</span></a></li>
+                    <li class="utility_option"><a href="basket.html" class="utility_option_link"><img src="images/basket.png" width="20" height="21" alt="Basket" /><span>    Your Basket</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="wrapper">
+            <header>
+                <ul>
+                    <a href="index.html"><img src="images/logo.png" width="227" height="99" alt="logo" /></a>
+                </ul>
+
+            </header>
+
+            <nav>
+                <ul>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a  href="groceries.html">Groceries</a></li>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a href="clothing.html">Clothing</a></li>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a href="electronics.html">Electronics</a></li>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a href="pharmacy.html">Pharmacy</a></li>
+                    <li style="margin-left: 10px; margin-right: 10px;"><a href="household.html">Home & Furniture</a></li>
+                    <li class="active" style="margin-left: 10px; margin-right: 10px;"><a href="clubcard.html">Clubcard</a></li>
+                </ul>
+            </nav><!--End of navigation-->
+
+            <div id="content">
+
+                <div>
+                    <br></br>
+                    <div class="responsive" style="margin-left:7%;" >
+                        <div class="img">
+                            <img src="images/points.png" alt="m" width="800" height="240">
+                        </div><br>
+                    </div>
+                    <h1 style=" color:#91DC5A; ">Gain points from buying products such as:</h1><br>
+                    <div id="Product" style="width: 908px; margin:auto;">
+                        <ul class="gridView">
+                            <li class="gridItem" style="height: 250px;">
+                                <img id="iimg" src="images/media_888500_L.jpg" width="175" height="150" alt="item"/>
+                                <div id="productContent">
+                                    <p id="name" style="color:#000">Loose Banana</p>
+                                    <p id="desc" style="color:#91DC5A">5 points</p>
+                                </div>
+                            </li>
+                            <li class="gridItem" style="height: 250px;">
+                                <img id="iimg" src="images/headphones.jpg" width="175" height="150" alt="item"/>
+                                <div id="productContent">
+                                    <p id="name" style="color:#000">Kitsound Arena Wireless Bluetooth Headphones</p>
+                                    <p id="desc" style="color:#91DC5A">100 points</p>
+                                </div>
+                            </li>
+                            <li class="gridItem" style="height: 250px;">
+                                <img id="iimg" src="images/rice.jpeg" width="175" height="150" alt="item"/>
+                                <div id="productContent">
+                                    <p id="name" style="color:#000">Ambrosia Original Rice Pudding Pot 120g</p>
+                                    <p id="desc" style="color:#91DC5A">20 points</p>
+                                </div>
+                            </li>
+                            <li class="gridItem" style="height: 250px;">
+                                <img id="iimg" src="images/steel.jpg" width="175" height="150" alt="item"/>
+                                <div id="productContent">
+                                    <p id="name" style="color:#000">Stainless Steel Cutlery Holder</p>
+                                    <p id="desc" style="color:#91DC5A">30 points</p>
+                                </div>
+                            </li>
+                            <li class="gridItem" style="height: 250px;">
+                                <img id="iimg" src="images/spa.jpeg" width="175" height="150" alt="item"/>
+                                <div id="productContent">
+                                    <p id="name" style="color:#000">Napolina Spaghetti 500g</p>
+                                    <p id="desc" style="color:#91DC5A">20 points</p>
+                                </div>
+                            </li>
+                            <li class="gridItem" style="height: 250px;">
+                                <img id="iimg" src="images/crisp.jpeg" width="175" height="150" alt="item"/>
+                                <div id="productContent">
+                                    <p id="name" style="color:#000">Pom-Bear Original Potato Snack 6x15g</p>
+                                    <p id="desc" style="color:#91DC5A">20 points</p>
+                                </div>
+                            </li>
+                            <li class="gridItem" style="height: 250px;">
+                                <img id="iimg" src="images/had.jpeg" width="175" height="150" alt="item"/>
+                                <div id="productContent">
+                                    <p id="name" style="color:#000">Carex Antibacterial Handwash 250ml</p>
+                                    <p id="desc" style="color:#91DC5A">10 points</p>
+                                </div>
+                            </li>
+                            <li class="gridItem" style="height: 250px;">
+                                <img id="iimg" src="images/air.jpeg" width="175" height="150" alt="item"/>
+                                <div id="productContent">
+                                    <p id="name" style="color:#000">Air Wick Plug In Air Freshener Refill 17ml</p>
+                                    <p id="desc" style="color:#91DC5A">30 points</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 style=" color:#91DC5A; ">What you gain from ClubPoints</h1><br>
+
+                    <div class="center">
+                        <div class="responsive" >
+                            <div class="img">
+                                    <img src="images/zoo.jpg" alt="m" width="270" height="200">
+                                
+                                <div class="desc">Buy tickets to the London Zoo</div>
+                            </div>
+                        </div>
+                        <div class="responsive" >
+                            <div class="img">
+                                    <img src="images/rest.jpg" alt="m" width="250" height="200">
+                               
+                                <div class="desc">Use points in restaurant</div>
+                            </div>
+                        </div>
+                        <div class="responsive" >
+                            <div class="img">
+                                    <img src="images/sub.jpg" alt="m" width="250" height="200">
+                               
+                                <div class="desc">Subscribe to magazines</div>
+                            </div>
+                        </div>
+                    </div>
+                    <br></br>
+
+                    <div id="checkout" style="margin:auto; clear:both;" width=150>
+                        <a href="signup.html"><button> Don't have a club card?</button></a>
+                    </div>
+                </div>
+            </div><!--End of content-->
+            <footer>
+
+                <ul>
+                    <li>
+                        <h4>FCEPH Help & FAQ</h4>
+                        <ul id="sub">
+                            <li><a href="contact.html">Help Centre</a></li>
+                            <li><a href="contact.html#a">Contact Us</a></li>
+                        </ul>
+                    </li>     
+                </ul>
+
+            </footer><!--End of footer-->
+            <div id="copy" style="padding-top:15px; float:left; padding-left:15px">&copyFCEHP 2017 All Rights Reserved</div>
+            <div id="find">Follow us: <a href="https://plus.google.com/"><img src="images/google.png" width="20" height="21" alt="google" /></a>
+                <a href="https://facebook.com/"><img src="images/facebook.png" width="20" height="21" alt="Facebook" /></a> 
+                <a href="https://twitter.com/"><img src="images/twitter.png" width="20" height="21" alt="Twitter" /></a> 
+                <a href="https://youtube.com/"><img src="images/youtube.png" width="20" height="21" alt="Youtube" /></a></div>
+            <!--Youtube, Facebook, Twitter and other links-->
+        </div> <!--End of wrapper-->
+    </body>
+</html>
